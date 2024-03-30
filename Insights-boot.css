@@ -924,8 +924,8 @@ body {
         left: 0;
         padding: 0 18px 0 15px;
         border-radius: 50px;
-        box-shadow: 3px 14px 25px -10px #92b4d0;
-        transition: background 0.5s ease 0s;
+       /* box-shadow: 3px 14px 25px -10px #92b4d0;
+        /* transition: background 0.5s ease 0s; */
       }
       .owl-controls .owl-buttons .owl-next {
         background: #fff;
@@ -935,7 +935,7 @@ body {
         padding: 0 15px 0 18px;
         border-radius: 50px;
         box-shadow: -3px 14px 25px -10px #92b4d0;
-        transition: background 0.5s ease 0s;
+       /* transition: background 0.5s ease 0s;*/
       }
       .owl-controls .owl-buttons .owl-prev:after,
       .owl-controls .owl-buttons .owl-next:after {
@@ -953,11 +953,11 @@ body {
         z-index: 1;
         width: 40px;
         height: 40px;
-        background-color: #ccc;
+        background-color: red;
         border-radius: 50%;
         position: absolute;
         top: 0%;
-        transform: translatey(-180%);
+        transform: translatey(-160%);
       }
 
       .owl-nav button span {
@@ -1263,7 +1263,7 @@ body {
     margin: 20px 170px;
   }
   .carousel-inner {
-    padding-top: 29.6%;
+    padding-top: 33.6%;
   }
 }
 @media (max-width: 1530px) {
@@ -1276,7 +1276,7 @@ body {
     padding-top: 43.6%;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1350px) {
   #header-trending {
     margin: 20px 170px;
   }
@@ -1358,7 +1358,7 @@ body {
   }
   .hero div{
     width: 310px;
-    left: 500px;
+    left: 450px;
   } 
   .slider-img-desc{
     top:175px;
@@ -1377,7 +1377,7 @@ body {
     width: 320px;
     height: 200px;
     padding: 20px;
-    left: 405px;
+    left: 340px;
   }
 
   .content p {
@@ -1472,6 +1472,7 @@ body {
     width: 100%;
   }
   .content {
+    display: none;
     width: 500px;
     left: 230px;
     top: 60px;

@@ -13,7 +13,7 @@ $(document).ready(function() {
           //pagination: false, //for version 1
           dots: false, // for version 2         
           //autoPlay:true // for version 1 
-          //autoplay: true,//for version 2 
+          autoplay: true,//for version 2 
           slideTransition: 'linear',
           
           autoplaySpeed: 1000,  
