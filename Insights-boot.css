@@ -1046,9 +1046,10 @@ body {
         .list-elements{
           width: 100%;
         }
-        .language-podcast-desc img {
+        /* .language-podcast-desc img {
           padding-right: 15px;
-        }
+        } */
+       
       .list-elements ul {
                   
         margin-left: auto;
@@ -1056,10 +1057,12 @@ body {
         list-style-type: none;
 
       }
+      
 
       .list-elements .language-podcast-list-item{
         /* height: 150px; */
         border-radius: 20px;
+        width: calc(100% - -245px);
         margin-bottom: 10px;
         line-height: 50px;
         /* border-top: 1px solid #e9ecef; */
@@ -1185,6 +1188,203 @@ body {
         }
 /******* podcast list "view all" css End*****/
 
+
+/*Podcast  Speakers Profile CSS  section start*/
+        /******* speakers list "view all" css start*****/
+
+        .language-podcast-desc p {
+          font-family: "Poppins";
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 36px;
+          text-align: center;
+          color: white;
+          text-transform: initial;
+      }
+        .speakers-list-elements ul {
+                    
+          margin-left: auto;
+          margin-right: auto;
+          list-style-type: none;
+
+        }
+
+        .speakers-list-elements .speakers-podcast-list-item{
+          /* height: 150px; */
+          border-radius: 20px;
+          margin-bottom: 10px;
+          line-height: 50px;
+          /* border-top: 1px solid #e9ecef; */        
+        }
+
+
+        .speakers-list-elements ul a {
+          display: block;
+          height: 100%;
+          text-decoration: none;
+          color: black;
+          padding-left: 10px;
+          position: relative;
+          transition: background .3s;
+        }
+
+        .speakers-list-elements ul a:after {         
+          position: absolute;
+          right: 10px;
+        }       
+        /* CHECKBOX CONTAINER STYLES
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        .speakers-container {
+          position: relative;
+          height: auto;
+          border-top: 0;
+          background-color: transparent;
+        }
+        .speakers-container ul{
+          background-color: transparent;
+        }
+        .speakers-container ul li{
+          border-radius: 20px;
+          margin-bottom: 10px;
+          line-height: 50px;          
+        }
+
+        [type="checkbox"] {
+          position: absolute;
+          left: -9999px;
+        }
+
+        #Speakers-view-all-id {
+          
+          border-radius: 10px;
+          display: block;
+          margin-top: 10px;
+          width: 100%;
+          height: 50px;
+          cursor: pointer;
+          position: absolute;
+          top: -375px;
+          left: 1120px;
+          transition: top .4s cubic-bezier(.44, .99, .48, 1);
+        }       
+        #Speakers-view-all-id:before,
+        #Speakers-view-all-id:after {
+          position: absolute;
+        }
+
+        #Speakers-view-all-id:before {
+          content: 'View All';
+          left: 10px;
+          font-size: 40px;
+          color: white;
+          text-transform: initial;
+        }
+
+        #Speakers-view-all-id:after {
+
+          right: 10px;
+          -webkit-animation: sudo .85s linear infinite alternate;
+          animation: sudo .85s linear infinite alternate;
+        }
+        
+        @keyframes sudo {
+          from {
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+          }
+          to {
+            -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+          }
+        }
+
+        
+        input[type="checkbox"] ~ ul {
+          width: 100%;
+          overflow: hidden;
+          max-height: 0;
+          transition: max-height .4s cubic-bezier(.44, .99, .48, 1);
+        }
+        /* CHECKED STATE STYLES
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        [type="checkbox"]:checked ~ ul {
+          /**
+          * the value of the `max-height` property specifies the transition speed
+          * set a very big value (e.g. 9999px) to see the difference
+          */              
+          max-height: 300px;
+        }
+
+        [type="checkbox"]:checked + #Speakers-view-all-id {
+          top: 100%;
+        }
+
+        [type="checkbox"]:checked + #Speakers-view-all-id:before {
+          content: 'Less';
+        }
+        ul li:last-child {
+          margin-bottom: 0px;
+        }
+        /******* speakers list "view all" css End*****/
+        
+        /*hover effect CSS start*/
+        
+        .bio-photo {
+          border-radius:50%;          
+          display: block;
+          width: var(--width);
+          height: auto;
+          width: 90%;
+        }
+        
+        .img-hover {
+          position: relative;
+          width: 100%;
+        }
+        
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 42px;
+          width: var(--width);
+          opacity: 0;
+          transition: 0.5s ease;
+          background: rgba(6, 16, 32, 0.75);
+          border-radius:50%;
+          border: 1px solid white;
+         
+        }
+        
+        .img-hover:hover .overlay {
+          opacity: 1;
+        }
+        
+        .hover-text {
+          color: black;
+          font-size: 3em;
+          font-family: Ubuntu;
+          font-weight: bold;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        .img-hover a:hover {
+          transform: scale(1.2);
+        
+        }
+         /*hover effect CSS End*/
+
+/*Podcast  Speakers Profile  CSS section End*/
+
+
 /*footer section start*/
         .bg-footer{
           background: linear-gradient(rgba(6, 16, 32, 0.85), rgba(6, 16, 32, 0.85)), url(images/footer-bg.png) no-repeat;
@@ -1292,6 +1492,9 @@ body {
   .language-podcast-desc h2{
     font-size: 25px;
   }
+  .language-podcast-desc p {
+    font-size: 18px;
+  }
 
   main {
     width: 500px;
@@ -1332,6 +1535,13 @@ body {
   main {
     width: 500px;
   }
+  .language-podcast-desc {
+    flex-direction: column;
+  }
+  .language-podcast-desc p {
+    font-size: 18px;
+  }
+
   .language-podcast-desc h2{
     font-size: 20px;
   }
@@ -1422,12 +1632,14 @@ body {
   }  
   .podcast-icon img{
     width: 100px;
-};
-.language-podcast-desc img{
-  width: 140px;
+  };
+  .language-podcast-desc img{
+    width: 140px;
+  }
+  .podcast-icon {
+    margin-right: 70px;
+  }
 }
-}
-
 @media (max-width: 700px) {
   main {
     width: 300px;
