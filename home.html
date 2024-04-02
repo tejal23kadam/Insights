@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page</title>
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-       
-        <link rel="stylesheet" href="Insights-boot.css">  
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-         <!-- Basic stylesheet -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-             integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-             crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-            crossorigin="anonymous" />
-        <!--Jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- Owl Carousel -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script>
-                $(function () {
-                    $("a[class='Update']").click(function () {
-                        $("#MyPopup").modal("show");
-                        return false;
-                    });
-                });
-        </script>
-    </head>
-    <body>
-        
-        
-            <div class="bg-image">
-                
-                <!-- header Logo & main menu Start -->
-                <div class="menu-header">
-                    <div class="container">
-                        <input type="checkbox" name="check" id="check">
-                        <div class="logo-container">
-                          <img src="images/navbar-images/header-logo.png" alt="Site Logo" height="40px">
-                        </div>
-                  
-                        <div class="nav-btn">
-                          <div class="nav-links">
-                            <ul>
-                              <li class="nav-link" style="--i: .6s">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="Insights-boot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- Basic stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <!--Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script>
+        $(function () {
+            $("a[class='Update']").click(function () {
+                $("#MyPopup").modal("show");
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <div class="bg-image">
+
+        <!-- header Logo & main menu Start -->
+        <div class="menu-header">
+            <div class="container">
+                <input type="checkbox" name="check" id="check">
+                <div class="logo-container">
+                    <img src="images/navbar-images/header-logo.png" alt="Site Logo" height="40px">
+                </div>
+
+                <div class="nav-btn">
+                    <div class="nav-links">
+                        <ul>
+                            <li class="nav-link" style="--i: .6s">
                                 <a href="#">Home</a>
-                              </li>
-                              <!-- multi level drop down menu-->
-                              <!--<li class="nav-link" style="--i: .85s">
+                            </li>
+                            <!-- multi level drop down menu-->
+                            <!--<li class="nav-link" style="--i: .85s">
                                 <a href="#">AboutUs<i class="fas fa-caret-down"></i></a>
                                 <div class="dropdown">
                                   <ul>
@@ -157,796 +163,617 @@
                                   </ul>
                                 </div>
                               </li>-->
-                              <li class="nav-link" style="--i: 1.35s">
+                            <li class="nav-link" style="--i: 1.35s">
                                 <a href="#">About Us</a>
-                              </li>
-                              <li class="nav-link" style="--i: 1.35s">
+                            </li>
+                            <li class="nav-link" style="--i: 1.35s">
                                 <a href="#">Audio</a>
-                              </li>
-                              <li class="nav-link" style="--i: 1.35s">
+                            </li>
+                            <li class="nav-link" style="--i: 1.35s">
                                 <a href="#">Video</a>
-                              </li>
-                              <li class="nav-link" style="--i: 1.35s">
+                            </li>
+                            <li class="nav-link" style="--i: 1.35s">
                                 <a href="#">our Host</a>
-                              </li>
-                             
-                            </ul>
-                          </div>
-                          <div class="log-sign" style="--i: 1.8s">
-                            <a class="Update" href=""><img src="images/navbar-images/search bar.png" alt="no image"></a>
-                            <a href="#"><img src="images/navbar-images/playlist.png" alt="no image"></a>
-                            <a href="#"><img src="images/navbar-images/Profile.png" alt="no image"></a>
-                          </div>
-                        </div>
-                  
-                        <div class="hamburger-menu-container">
-                          <div class="hamburger-menu">
-                            <div></div>
-                          </div>
-                        </div>
-                      </div>
-                    <main>
-                        <section>
-                          <div class="overlay"></div>
-                        </section>
-                      </main> 
-                </div>                     
-                <!-- header Logo & main menu End--> 
-                
-                <!--Search bar Modal Popup start-->
-                <div id="MyPopup" class="modal fade" role="dialog">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">                            
-                            <div class="modal-body">
-                                <form class="navbar-form " role="search">
-                                    <div class="form-group search-bar-container">
-                                      <input type="text" placeholder="Search">
-                                    </div>                                    
-                                  </form>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="log-sign" style="--i: 1.8s">
+                        <a class="Update" href=""><img src="images/navbar-images/search bar.png" alt="no image"></a>
+                        <a href="#"><img src="images/navbar-images/playlist.png" alt="no image"></a>
+                        <a href="#"><img src="images/navbar-images/Profile.png" alt="no image"></a>
+                    </div>
+                </div>
+
+                <div class="hamburger-menu-container">
+                    <div class="hamburger-menu">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <section>
+                    <div class="overlay"></div>
+                </section>
+            </main>
+        </div>
+        <!-- header Logo & main menu End-->
+
+        <!--Search bar Modal Popup start-->
+        <div id="MyPopup" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="navbar-form " role="search">
+                            <div class="form-group search-bar-container">
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Search bar Modal Popup End-->
+
+        <!-- header slider section start-->
+        <div>
+            <p id="header-trending">#Trending</p>
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                        <div class="flex-section-row">
+                            <div class="slide-col">
+                                <div class="flex-section-column">
+                                    <div class="hero">
+                                        <div class="slider-img">
+                                            <img src="images/slider-images/slider_image1.png" alt="avatar">
+
+                                        </div>
+                                        <div class="slider-img-desc">
+                                            <h1>Grooming tips</h1>
+                                            <h4>By Ranbeer Allahbadia</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h2>Taking <span class="color-lemon-yellow">Podcast</span> </h2>
+                                    <h2>to the next level</h2>
+                                    <h3 class="color-lemon-yellow">with Ranveer Allahbadia</h3>
+                                    <div class="podcast-icon">
+                                        <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
+                                        <img src="images/slider-icons/listen now_bg_black.png" class="img-top"
+                                            alt="Card Front">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>     
-                <!--Search bar Modal Popup End-->            
-                
-                <!-- header slider section start-->
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="flex-section-row">
+                            <div class="slide-col">
+                                <div class="flex-section-column">
+                                    <div class="hero">
+                                        <div class="slider-img">
+                                            <img src="images/slider-images/slider_image2.png" alt="avatar">
+                                        </div>
+                                        <div class="slider-img-desc">
+                                            <h1>Self Love </h1>
+                                            <h4>By Jaya Kishori</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h2>How to <span class="color-pink">Practice</span> </h2>
+                                    <h2>self love</h2>
+                                    <h3 class="color-pink">with Jaya Kishori</h3>
+                                    <div class="podcast-icon">
+                                        <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
+                                        <img src="images/slider-icons/listen now_bg_black.png" class="img-top"
+                                            alt="Card Front">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="flex-section-row">
+                            <div class="slide-col">
+                                <div class="flex-section-column">
+                                    <div class="hero">
+                                        <div class="slider-img">
+                                            <img src="images/slider-images/slider_image3.png" alt="avatar">
+                                        </div>
+                                        <div class="slider-img-desc">
+                                            <h1>Lack of </h1>
+                                            <h4>self confidence</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h2>Lack <span class="color-light-yellow">of</span></h2>
+                                    <h2>self confidence</h2>
+                                    <h3 class="color-light-yellow">with Sadhguru</h3>
+                                    <div class="podcast-icon">
+                                        <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
+                                        <img src="images/slider-icons/listen now_bg_black.png" class="img-top"
+                                            alt="Card Front">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header slider section end-->
+    <!--Main bg-gradiant section start-->
+    <div class="bg-gradiant">
+        <div class="section-space-p ">
+            <div class="flex-section-column">
+                <div class="trending-section-heading ">
+                    <h1 class="font-white">LATEST PODCAST</h2>
+                </div>
+                <div class="trending-section-heading ">
+                    <div id="news-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
+                        <div class="item">
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="images/latest-Podacst-section/latest-ep-image1.png" alt="">
+                                    <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"
+                                            alt="no image" style=" width: 35%;"></a>
+                                </div>
+                                <div class="latest-blog-desc">
+                                    <h2>SELF HELP</h2>
+                                    <p>8 Successfull people explain how to beat self-doubt like a warrior| The Ranveer
+                                        Show</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="images/latest-Podacst-section/latest-ep-image2.png" alt="">
+                                    <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"
+                                            alt="no image" style=" width: 35%;"></a>
+                                </div>
+                                <div class="latest-blog-desc">
+                                    <h2>MOTIVATION</h2>
+                                    <p>Jaya Kishori - Krishna, Mantra Aur Detachment - AJIO Presents TRSH 165-supermind
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="images/latest-Podacst-section/latest-ep-image3.png" alt="">
+                                    <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"
+                                            alt="no image" style=" width: 35%;"></a>
+                                </div>
+                                <div class="latest-blog-desc">
+                                    <h2>REMOVE NEGATIVITY</h2>
+                                    <p>Gaur Gopal Das: Remove NEGATIVITY From Your MIND and Become UNSTOPPABLE!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="images/latest-Podacst-section/latest-ep-image4.png" alt="">
+                                    <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"
+                                            alt="no image" style=" width: 35%;"></a>
+                                </div>
+                                <div class="latest-blog-desc">
+                                    <h2>MOTIVATIONAL STORIES</h2>
+                                    <p>OP 10 MOTIVATIONAL STORIES - By Sandeep Maheshwari - Compilation of Best Stories
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="images/latest-Podacst-section/latest-ep-image3.png" alt="">
+                                    <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"
+                                            alt="no image" style=" width: 35%;"></a>
+                                </div>
+                                <div class="latest-blog-desc">
+                                    <h2>REMOVE NEGATIVITY</h2>
+                                    <p>Gaur Gopal Das: Remove NEGATIVITY From Your MIND and Become UNSTOPPABLE!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="owl-theme">
+                    <div class="owl-controls">
+                        <div class="custom-nav owl-nav"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Latest Podcast slider section End-->
+
+            <!-- Podcast Language(hindi/English) section Start-->
+            <div class="section-space-p ">
                 <div>
-                    <p id="header-trending">#Trending</p>
-                    <div id="carousel" class="carousel slide"  data-bs-ride="carousel">                    
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active" data-bs-interval="2000" >
-                                <div class="flex-section-row">
-                                    <div class="slide-col">
-                                        <div class="flex-section-column">
-                                            <div class="hero">
-                                                <div class="slider-img">
-                                                    <img src="images/slider-images/slider_image1.png" alt="avatar">
-                                                   
-                                                </div>
-                                                <div class="slider-img-desc">
-                                                    <h1>Grooming tips</h1>                                                        
-                                                    <h4>By Ranbeer Allahbadia</h4>                                      
-                                                </div>
+                    <div class="trending-section-heading ">
+                        <h1 class="font-white"> PODCAST</h1>
+                    </div>
+                </div>
+                <div class="language-flex-section-row">
+                    <select name="Language">
+                        <option value="01">Hindi</option>
+                        <option value="02">English</option>
+                    </select>
+
+                    <select name="podcast-type">
+                        <option value="01">Audio</option>
+                        <option value="02">Video</option>
+                    </select>
+                </div>
+                <div class="flex-section-row">
+                    <div class="list-elements">
+                        <ul>
+                            <li class="language-podcast-list-item">
+                                <div>
+                                    <div class="list-element-flex-row">
+                                        <div class="language-podcast-desc">
+                                            <div>
+                                                <img src="images/Language-podcast section/Language_podcast-image1.png"
+                                                    alt="no image">
+                                            </div>
+                                            <div>
+                                                <h2>Grooming Tips</h2>
+                                                <h2>By Ranveer Allahbadia</h2>
                                             </div>
                                         </div>
-                                        <div class="content">                                        
-                                            <h2>Taking <span class="color-lemon-yellow">Podcast</span> </h2>
-                                            <h2>to the next level</h2>
-                                            <h3 class="color-lemon-yellow">with Ranveer Allahbadia</h3>
+                                        <div class="language-podcast-button">
                                             <div class="podcast-icon">
-                                                <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
-                                                <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                            </div>                                          
-                                        </div>                                    
-                                    </div>
-                                </div>
-                            </div>
-                        
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <div class="flex-section-row">
-                                <div class="slide-col">
-                                    <div class="flex-section-column">
-                                        <div class="hero">
-                                            <div class="slider-img">
-                                                <img src="images/slider-images/slider_image2.png" alt="avatar">
-                                            </div>
-                                            <div class="slider-img-desc">
-                                                <h1>Self Love </h1>                                                        
-                                                <h4>By Jaya Kishori</h4>                                      
+                                                <img src="images/Language-podcast section/listen_now.png"
+                                                    alt="Card Back">
+                                                <img src="images/slider-icons/listen now_bg_black.png" class="img-top"
+                                                    alt="Card Front">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="content">                                        
-                                        <h2>How to <span class="color-pink">Practice</span> </h2>
-                                        <h2>self love</h2>
-                                        <h3 class="color-pink">with Jaya Kishori</h3>
-                                        <div class="podcast-icon">
-                                            <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
-                                            <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                        </div>                                          
-                                    </div>                                    
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <div class="flex-section-row">
-                                <div class="slide-col">
-                                    <div class="flex-section-column">
-                                        <div class="hero">
-                                            <div class="slider-img">
-                                                <img src="images/slider-images/slider_image3.png" alt="avatar">
+                            </li>
+                            <li class="language-podcast-list-item">
+                                <div>
+                                    <div class="list-element-flex-row">
+                                        <div class="language-podcast-desc">
+                                            <div>
+                                                <img src="images/Language-podcast section/Language_podcast-image2.png"
+                                                    alt="no image">
                                             </div>
-                                            <div class="slider-img-desc">
-                                                <h1>Lack of  </h1>                                                        
-                                                <h4>self confidence</h4>                                      
+                                            <div>
+                                                <h2>Self Love?</h2>
+                                                <h2>By Jaya Kishori</h2>
+                                            </div>
+                                        </div>
+                                        <div class="language-podcast-button">
+                                            <div class="podcast-icon">
+                                                <img src="images/Language-podcast section/listen_now.png"
+                                                    alt="Card Back">
+                                                <img src="images/slider-icons/listen now_bg_black.png" class="img-top"
+                                                    alt="Card Front">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="content">                                        
-                                        <h2>Lack <span class="color-light-yellow">of</span></h2>
-                                        <h2>self confidence</h2>
-                                        <h3 class="color-light-yellow">with Sadhguru</h3>
-                                        <div class="podcast-icon">
-                                            <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
-                                            <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                        </div>                                          
-                                    </div>                                    
+                                </div>
+                            </li>
+                            <li class="language-podcast-list-item">
+                                <div>
+                                    <div class="list-element-flex-row">
+                                        <div class="language-podcast-desc">
+                                            <div>
+                                                <img src="images/Language-podcast section/Language_podcast-image3.png"
+                                                    alt="no image">
+                                            </div>
+                                            <div>
+                                                <h2>2 Hours to change your life forever</h2>
+                                                <h2>By Sadhguru</h2>
+                                            </div>
+                                        </div>
+                                        <div class="language-podcast-button">
+                                            <div class="podcast-icon">
+                                                <img src="images/Language-podcast section/listen_now.png"
+                                                    alt="Card Back">
+                                                <img src="images/slider-icons/listen now_bg_black.png" class="img-top"
+                                                    alt="Card Front">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="language-container">
+                                <input type="checkbox" id="check_id">
+                                <label for="check_id" id="view-all-id"></label>
+
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <div class="list-element-flex-row">
+                                                <div class="language-podcast-desc">
+                                                    <div>
+                                                        <img src="images/Language-podcast section/Language_podcast-image4.png"
+                                                            alt="no image">
+                                                    </div>
+                                                    <div>
+                                                        <h2>2 Hours to change your life forever</h2>
+                                                        <h2>By Sadhguru</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="language-podcast-button">
+                                                    <div class="podcast-icon">
+                                                        <img src="images/Language-podcast section/listen_now.png"
+                                                            alt="Card Back">
+                                                        <img src="images/slider-icons/listen now_bg_black.png"
+                                                            class="img-top" alt="Card Front">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="list-element-flex-row">
+                                                <div class="language-podcast-desc">
+                                                    <div>
+                                                        <img src="images/Language-podcast section/Language_podcast-image3.png"
+                                                            alt="no image">
+                                                    </div>
+                                                    <div>
+                                                        <h2>2 Hours to change your life forever</h2>
+                                                        <h2>By Sadhguru</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="language-podcast-button">
+                                                    <div class="podcast-icon">
+                                                        <img src="images/Language-podcast section/listen_now.png"
+                                                            alt="Card Back">
+                                                        <img src="images/slider-icons/listen now_bg_black.png"
+                                                            class="img-top" alt="Card Front">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Podcast Language(hindi/English) section End-->
+
+
+            <!-- Podcast  Speakers Profile section start-->
+            <div class="section-space-p ">
+                <div>
+                    <div class="trending-section-heading ">
+                        <h1 class="font-white"> SPEAKERS PROFILE</h1>
+                    </div>
+                </div>
+                <div class="flex-section-row">
+                    <div class="speakers-list-elements">
+
+
+                        <div class="speakers-podcast-list-item">
+                            <div class="list-element-flex-row">
+                                <div class="language-podcast-desc">
+                                    <div>
+                                        <div class="img-hover">
+                                            <img src="images/speakers-profile-images/profile-img-1.png"
+                                                class="bio-photo text-center">
+                                            <div class="overlay ">
+                                                <div class="hover-text">
+                                                    <div>
+                                                        <div>
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/button.png"
+                                                                    alt="no image"></a>
+                                                        </div>
+                                                        <div class="flex-section-row">
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/twitter.png"
+                                                                    alt="no image"></a>
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/instagram.png"
+                                                                    alt="no image"></a>
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/facebook.png"
+                                                                    alt="no image"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Ranveer Allahbadia</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="img-hover">
+                                            <img src="images/speakers-profile-images/profile-img-2.png"
+                                                class="bio-photo text-center">
+                                            <div class="overlay ">
+                                                <div class="hover-text">
+                                                    <div>
+                                                        <div>
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/button.png"
+                                                                    alt="no image"></a>
+                                                        </div>
+                                                        <div class="flex-section-row">
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/twitter.png"
+                                                                    alt="no image"></a>
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/instagram.png"
+                                                                    alt="no image"></a>
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/facebook.png"
+                                                                    alt="no image"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Jaya Kishori</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="img-hover">
+                                            <img src="images/speakers-profile-images/profile-img-3.png"
+                                                class="bio-photo text-center">
+                                            <div class="overlay ">
+                                                <div class="hover-text">
+                                                    <div>
+                                                        <div>
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/button.png"
+                                                                    alt="no image"></a>
+                                                        </div>
+                                                        <div class="flex-section-row">
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/twitter.png"
+                                                                    alt="no image"></a>
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/instagram.png"
+                                                                    alt="no image"></a>
+                                                            <a href="#"><img
+                                                                    src="images/speakers-profile-images/facebook.png"
+                                                                    alt="no image"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Sandeep Maheshwari</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="img-hover">
+                                            <img src="images/speakers-profile-images/view-more.png"
+                                                class="bio-photo text-center">
+                                            <div class="hover-text" style="left: 45%; top: 50%;">
+                                                <div>
+                                                    <a href="#"><img src="images/speakers-profile-images/button.png"
+                                                            alt="no image"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>View All</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div> 
                 </div>
-            </div>   
-                <!--header slider section end-->
-                <!--Main bg-gradiant section start-->    
-                    <div class="bg-gradiant" >
-                        <div class="section-space-p ">
-                                <div class="flex-section-column" > 
-                                    <div class="trending-section-heading ">
-                                        <h1 class="font-white">LATEST PODCAST</h2>
-                                    </div> 
-                                    <div class="trending-section-heading ">     
-                                        <div id="news-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
-                                            <div class="item" >
-                                               <div class="post-slide">
-                                                    <div class="post-img">
-                                                        <img src="images/latest-Podacst-section/latest-ep-image1.png" alt="">
-                                                        <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"  alt="no image"  style=" width: 35%;"></a>                                                      
-                                                    </div>
-                                                    <div class="latest-blog-desc">  
-                                                        <h2>SELF HELP</h2>
-                                                        <p >8 Successfull people explain how to beat self-doubt like a warrior| The Ranveer Show</p>
-                                                    </div>                                                   
-                                                </div>
-                                            </div>
-                                            <div class="item" >
-                                                <div class="post-slide">
-                                                    <div class="post-img">
-                                                        <img src="images/latest-Podacst-section/latest-ep-image2.png" alt="">
-                                                        <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"  alt="no image"  style=" width: 35%;"></a>                                                      
-                                                    </div>
-                                                    <div class="latest-blog-desc">  
-                                                        <h2>MOTIVATION</h2>
-                                                        <p >Jaya Kishori - Krishna, Mantra Aur Detachment - AJIO Presents TRSH 165-supermind </p>                                                    
+                <!-- Podcast  Speakers Profile section End-->
 
-                                                    </div>                                                   
-                                                </div>
-                                             </div>
-                                             <div class="item" >
-                                                <div class="post-slide">
-                                                    <div class="post-img">
-                                                        <img src="images/latest-Podacst-section/latest-ep-image3.png" alt="">
-                                                        <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"  alt="no image"  style=" width: 35%;"></a>                                                       
-                                                    </div>
-                                                    <div class="latest-blog-desc">  
-                                                        <h2>REMOVE NEGATIVITY</h2>
-                                                        <p >Gaur Gopal Das: Remove NEGATIVITY From Your MIND and Become UNSTOPPABLE!</p>
-                                                    </div>                                                   
-                                                </div>
-                                             </div>
-                                             <div class="item" >
-                                                <div class="post-slide">
-                                                    <div class="post-img">
-                                                        <img src="images/latest-Podacst-section/latest-ep-image4.png" alt="">
-                                                        <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"  alt="no image"  style=" width: 35%;"></a>                                                       
-                                                    </div>
-                                                    <div class="latest-blog-desc">  
-                                                        <h2>MOTIVATIONAL STORIES</h2>
-                                                        <p >OP 10 MOTIVATIONAL STORIES - By Sandeep Maheshwari - Compilation of Best Stories </p>
-                                                    </div>                                                   
-                                                </div>
-                                             </div>
-                                             <div class="item" >
-                                                <div class="post-slide">
-                                                    <div class="post-img">
-                                                        <img src="images/latest-Podacst-section/latest-ep-image3.png" alt="">
-                                                        <a href="#" class="over-layer"><img src="images/video-podcast-page/listen-now.png"  alt="no image"  style=" width: 35%;"></a>                                                      
-                                                    </div>
-                                                    <div class="latest-blog-desc">  
-                                                        <h2>REMOVE NEGATIVITY</h2>
-                                                        <p >Gaur Gopal Das: Remove NEGATIVITY From Your MIND and Become UNSTOPPABLE!</p>
-                                                    </div>                                                   
-                                                </div>
-                                             </div>
-                                             
-                                        </div>
-                                    </div>
-                                    <div class="owl-theme">
-                                        <div class="owl-controls">
-                                           <div class="custom-nav owl-nav"></div>
-                                        </div>
-                                    </div>                                                      
-                            </div>
-                        <!-- Latest Podcast slider section End-->             
-                        
-                        <!-- Podcast Language(hindi/English) section Start-->                
-                           <div class="section-space-p ">
-                                <div> 
-                                    <div class="trending-section-heading ">
-                                        <h1 class="font-white"> PODCAST</h1>                                            
-                                    </div>     
-                                </div>
-                                <div class="language-flex-section-row">
-                                    <select name="Language">
-                                        <option value="01">Hindi</option>
-                                        <option value="02">English</option>                                        
-                                    </select> 
 
-                                    <select name="podcast-type">
-                                        <option value="01">Audio</option>
-                                        <option value="02">Video</option>                                        
-                                    </select> 
-                                </div>
-                                <div class="flex-section-row" >     
-                                    <div class="list-elements">
-                                        <ul>
-                                            <li class="language-podcast-list-item">
-                                                <div>
-                                                    <div class="list-element-flex-row" >     
-                                                        <div class="language-podcast-desc">
-                                                            <div>
-                                                                <img src="images/Language-podcast section/Language_podcast-image1.png" alt="no image">   
-                                                            </div>
-                                                            <div >                                                                
-                                                                <h2>Grooming Tips</h2>                            
-                                                                <h2>By Ranveer Allahbadia</h2>                                        
-                                                            </div>
-                                                        </div>
-                                                        <div class="language-podcast-button">
-                                                            <div class="podcast-icon">
-                                                                <img src="images/Language-podcast section/listen_now.png" alt="Card Back">
-                                                                <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                              </li>
-                                              <li class="language-podcast-list-item">
-                                                <div>
-                                                    <div class="list-element-flex-row" >     
-                                                        <div class="language-podcast-desc">
-                                                            <div>
-                                                                <img src="images/Language-podcast section/Language_podcast-image2.png" alt="no image">   
-                                                            </div>
-                                                            <div >                                                                
-                                                                <h2>Self Love?</h2>                            
-                                                                <h2>By Jaya Kishori</h2>                                        
-                                                            </div>
-                                                        </div>
-                                                        <div class="language-podcast-button">
-                                                            <div class="podcast-icon">
-                                                                <img src="images/Language-podcast section/listen_now.png" alt="Card Back">
-                                                                <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                              </li>
-                                              <li class="language-podcast-list-item">
-                                                <div>
-                                                    <div class="list-element-flex-row" >     
-                                                        <div class="language-podcast-desc">
-                                                            <div>
-                                                                <img src="images/Language-podcast section/Language_podcast-image3.png" alt="no image">   
-                                                            </div>
-                                                            <div >                                                                
-                                                                <h2>2 Hours to change your life forever</h2>                            
-                                                                <h2>By Sadhguru</h2>                                        
-                                                            </div>
-                                                        </div>
-                                                        <div class="language-podcast-button">
-                                                            <div class="podcast-icon">
-                                                                <img src="images/Language-podcast section/listen_now.png" alt="Card Back">
-                                                                <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>                                   
-                                            <li class="language-container">
-                                              <input type="checkbox" id="check_id">
-                                             <label for="check_id" id="view-all-id"></label>
-                                              
-                                              <ul>
-                                                <li>
+
+
+
+
+                <!-- Latest Podcast Review section Start-->
+                <div class="section-space-p ">
+                    <div>
+                        <div class="trending-section-heading ">
+                            <h1 class="font-white"> LATEST PODCAST REVIEW</h1>
+                        </div>
+                    </div>
+                    <div class="flex-section-row">
+                        <div class="speakers-list-elements">
+                            <div>
+                                <div class="list-element-flex-row">
+                                    <div class="latest-podcast-review-section-row">
+                                        <div> 
+                                            <img src="images/latest-podcast-reviews/podcast-review-image1.png"
+                                                width="20%"></div>
+                                                <div class="slider">
                                                     <div>
-                                                        <div class="list-element-flex-row" >     
-                                                            <div class="language-podcast-desc">
-                                                                <div>
-                                                                    <img src="images/Language-podcast section/Language_podcast-image4.png" alt="no image">   
-                                                                </div>
-                                                                <div >                                                                
-                                                                    <h2>2 Hours to change your life forever</h2>                            
-                                                                    <h2>By Sadhguru</h2>                                        
-                                                                </div>
-                                                            </div>
-                                                            <div class="language-podcast-button">
-                                                                <div class="podcast-icon">
-                                                                    <img src="images/Language-podcast section/listen_now.png" alt="Card Back">
-                                                                    <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                                                </div> 
-                                                            </div>
-                                                        </div>
+                                                      <div class="slideCopy-container">
+                                                          <div class="slideCopy-content">First</div>
+                                                      </div>
                                                     </div>
-                                                </li>
-                                                <li>
                                                     <div>
-                                                        <div class="list-element-flex-row" >     
-                                                            <div class="language-podcast-desc">
-                                                                <div>
-                                                                    <img src="images/Language-podcast section/Language_podcast-image3.png" alt="no image">   
-                                                                </div>
-                                                                <div >                                                                
-                                                                    <h2>2 Hours to change your life forever</h2>                            
-                                                                    <h2>By Sadhguru</h2>                                        
-                                                                </div>
-                                                            </div>
-                                                            <div class="language-podcast-button">
-                                                                <div class="podcast-icon">
-                                                                    <img src="images/Language-podcast section/listen_now.png" alt="Card Back">
-                                                                    <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                                                </div> 
-                                                            </div>
-                                                        </div>
+                                                      <div class="slideCopy-container">
+                                                          <div class="slideCopy-content">Second</div>
+                                                      </div>
                                                     </div>
-                                                </li>
-                                                
-                                              </ul>
-                                            </li>
-                                          </ul>
+                                                    <div>
+                                                      <div class="slideCopy-container">
+                                                          <div class="slideCopy-content">Third</div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                    
+                                                  
+
                                     </div>
-                                </div>  
+                                </div>
                             </div>
-                        <!-- Podcast Language(hindi/English) section End-->
-
-                        
-                         <!-- Podcast Speakers Profile section Start-->                
-                         <!-- <div class="section-space-p ">
-                            <div> 
-                                <div class="trending-section-heading ">
-                                    <h1 class="font-white"> SPEAKERS PROFILE</h1>                                            
-                                </div>     
-                            </div>                          
-                            <div class="flex-section-row" >     
-                                <div class="speakers-list-elements">
-                                    <ul>
-                                        <li class="speakers-podcast-list-item">
-                                            <div>
-                                                <div class="list-element-flex-row" >     
-                                                    <div class="language-podcast-desc">
-                                                        <div>
-                                                            <div class="img-hover">
-                                                                <img  src="images/speakers-profile-images/profile-img-1.png" class="bio-photo text-center">
-                                                                <div class="overlay ">
-                                                                  <div class="hover-text">
-                                                                    <div>                                                                       
-                                                                        <div>
-                                                                           <a href="#"><img src="images/speakers-profile-images/button.png" alt="no image"></a>                                                   
-                                                                        </div>                                            
-                                                                        <div class="flex-section-row">  
-                                                                            <a href="#"><img src="images/speakers-profile-images/twitter.png"  alt="no image"></a>    
-                                                                            <a href="#"><img src="images/speakers-profile-images/instagram.png"  alt="no image"></a>     
-                                                                            <a href="#"><img src="images/speakers-profile-images/facebook.png"  alt="no image"></a>     
-                                                                        </div>                            
-                                                                    </div> 
-                                                                  </div>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <p>Ranveer Allahbadia</p>
-                                                            </div>                                                         
-                                                        </div>
-                                                        <div>
-                                                            <div class="img-hover">
-                                                                <img  src="images/speakers-profile-images/profile-img-2.png" class="bio-photo text-center">
-                                                                <div class="overlay ">
-                                                                    <div class="hover-text">
-                                                                        <div>                                                                       
-                                                                            <div>
-                                                                                <a href="#"><img src="images/speakers-profile-images/button.png"  alt="no image"></a>                                                   
-                                                                            </div>                                            
-                                                                            <div class="flex-section-row">  
-                                                                                <a href="#"><img src="images/speakers-profile-images/twitter.png"  alt="no image"></a>    
-                                                                                <a href="#"><img src="images/speakers-profile-images/instagram.png"  alt="no image"></a>     
-                                                                                <a href="#"><img src="images/speakers-profile-images/facebook.png"  alt="no image"></a>     
-                                                                            </div>                           
-                                                                        </div> 
-                                                                      </div>
-                                                                </div>
-                                                              </div>
-                                                              <div>
-                                                                <p>Jaya Kishori</p>
-                                                            </div> 
-                                                        </div>
-                                                        <div>
-                                                            <div class="img-hover">
-                                                                <img  src="images/speakers-profile-images/profile-img-3.png" class="bio-photo text-center">
-                                                                <div class="overlay ">
-                                                                    <div class="hover-text">
-                                                                        <div>                                                                       
-                                                                            <div>
-                                                                                <a href="#"><img src="images/speakers-profile-images/button.png"  alt="no image"></a>                                                   
-                                                                            </div>                                            
-                                                                            <div class="flex-section-row">  
-                                                                                <a href="#"><img src="images/speakers-profile-images/twitter.png"  alt="no image"></a>    
-                                                                                <a href="#"><img src="images/speakers-profile-images/instagram.png"  alt="no image"></a>     
-                                                                                <a href="#"><img src="images/speakers-profile-images/facebook.png"  alt="no image"></a>     
-                                                                            </div>                               
-                                                                        </div> 
-                                                                      </div>
-                                                                </div>
-                                                              </div>  
-                                                              <div>
-                                                                <p>Sandeep Maheshwari</p>
-                                                            </div>  
-                                                        </div>
-                                                        <div>
-                                                            <div class="img-hover">
-                                                                <img  src="images/speakers-profile-images/profile-img-4.png" class="bio-photo text-center">
-                                                                <div class="overlay ">
-                                                                    <div class="hover-text">
-                                                                        <div>                                                                       
-                                                                            <div>
-                                                                                <a href="#"><img src="images/speakers-profile-images/button.png"  alt="no image"></a>                                                   
-                                                                            </div>                                            
-                                                                            <div class="flex-section-row">  
-                                                                                <a href="#"><img src="images/speakers-profile-images/twitter.png"  alt="no image"></a>    
-                                                                                <a href="#"><img src="images/speakers-profile-images/instagram.png"  alt="no image"></a>     
-                                                                                <a href="#"><img src="images/speakers-profile-images/facebook.png"  alt="no image"></a>     
-                                                                            </div>                           
-                                                                        </div> 
-                                                                      </div>
-                                                                </div>
-                                                              </div>
-                                                              <div>
-                                                                <p>Sadhguru</p>
-                                                            </div>  
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                          </li>                                          
-                                                                    
-                                        <li class="speakers-container">
-                                          <input type="checkbox" id="speakers_check_id">
-                                          <label for="speakers_check_id" id="Speakers-view-all-id"></label>
-                                          <ul>
-                                            <li class="speakers-podcast-list-item">
-                                                <div>
-                                                    <div class="list-element-flex-row" >     
-                                                        <div class="language-podcast-desc">
-                                                            <div>
-                                                                <div class="img-hover">
-                                                                    <img  src="images/speakers-profile-images/profile-img-1.png" class="bio-photo text-center">
-                                                                    <div class="overlay ">
-                                                                      <div class="hover-text">
-                                                                        <div>                                                                       
-                                                                            <div>
-                                                                               <a href="#"><img src="images/speakers-profile-images/button.png" alt="no image"></a>                                                   
-                                                                            </div>                                            
-                                                                            <div class="flex-section-row">  
-                                                                                <a href="#"><img src="images/speakers-profile-images/twitter.png"  alt="no image"></a>    
-                                                                                <a href="#"><img src="images/speakers-profile-images/instagram.png"  alt="no image"></a>     
-                                                                                <a href="#"><img src="images/speakers-profile-images/facebook.png"  alt="no image"></a>     
-                                                                            </div>                            
-                                                                        </div> 
-                                                                      </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <p>Ranveer Allahbadia</p>
-                                                                </div>                                                         
-                                                            </div>
-                                                            <div>
-                                                                <div class="img-hover">
-                                                                    <img  src="images/speakers-profile-images/profile-img-2.png" class="bio-photo text-center">
-                                                                    <div class="overlay ">
-                                                                        <div class="hover-text">
-                                                                            <div>                                                                       
-                                                                                <div>
-                                                                                    <a href="#"><img src="images/speakers-profile-images/button.png"  alt="no image"></a>                                                   
-                                                                                </div>                                            
-                                                                                <div class="flex-section-row">  
-                                                                                    <a href="#"><img src="images/speakers-profile-images/twitter.png"  alt="no image"></a>    
-                                                                                    <a href="#"><img src="images/speakers-profile-images/instagram.png"  alt="no image"></a>     
-                                                                                    <a href="#"><img src="images/speakers-profile-images/facebook.png"  alt="no image"></a>     
-                                                                                </div>                           
-                                                                            </div> 
-                                                                          </div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div>
-                                                                    <p>Jaya Kishori</p>
-                                                                </div> 
-                                                            </div>
-                                            </li>    
-
-                                          </ul>
-                                    </div>
-                                </div>  
-                            </div> -->
-
-
-
-
-
-
-                             <div class="section-space-p ">
-                            <div> 
-                                <div class="trending-section-heading ">
-                                    <h1 class="font-white"> SPEAKERS PROFILE</h1>                                            
-                                </div>     
-                            </div>                          
-                            <div class="flex-section-row" >     
-                                <div class="speakers-list-elements">
-                                    
-                                       
-                                            <div class="speakers-podcast-list-item">
-                                                <div class="list-element-flex-row" >     
-                                                    <div class="language-podcast-desc">
-                                                        <div>
-                                                            <div class="img-hover">
-                                                                <img  src="images/speakers-profile-images/profile-img-1.png" class="bio-photo text-center">
-                                                                <div class="overlay ">
-                                                                  <div class="hover-text">
-                                                                    <div>                                                                       
-                                                                        <div>
-                                                                           <a href="#"><img src="images/speakers-profile-images/button.png" alt="no image"></a>                                                   
-                                                                        </div>                                            
-                                                                        <div class="flex-section-row">  
-                                                                            <a href="#"><img src="images/speakers-profile-images/twitter.png"  alt="no image"></a>    
-                                                                            <a href="#"><img src="images/speakers-profile-images/instagram.png"  alt="no image"></a>     
-                                                                            <a href="#"><img src="images/speakers-profile-images/facebook.png"  alt="no image"></a>     
-                                                                        </div>                            
-                                                                    </div> 
-                                                                  </div>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <p>Ranveer Allahbadia</p>
-                                                            </div>                                                         
-                                                        </div>
-                                                        <div>
-                                                            <div class="img-hover">
-                                                                <img  src="images/speakers-profile-images/profile-img-2.png" class="bio-photo text-center">
-                                                                <div class="overlay ">
-                                                                    <div class="hover-text">
-                                                                        <div>                                                                       
-                                                                            <div>
-                                                                                <a href="#"><img src="images/speakers-profile-images/button.png"  alt="no image"></a>                                                   
-                                                                            </div>                                            
-                                                                            <div class="flex-section-row">  
-                                                                                <a href="#"><img src="images/speakers-profile-images/twitter.png"  alt="no image"></a>    
-                                                                                <a href="#"><img src="images/speakers-profile-images/instagram.png"  alt="no image"></a>     
-                                                                                <a href="#"><img src="images/speakers-profile-images/facebook.png"  alt="no image"></a>     
-                                                                            </div>                           
-                                                                        </div> 
-                                                                      </div>
-                                                                </div>
-                                                              </div>
-                                                              <div>
-                                                                <p>Jaya Kishori</p>
-                                                            </div> 
-                                                        </div>
-                                                        <div>
-                                                            <div class="img-hover">
-                                                                <img  src="images/speakers-profile-images/profile-img-3.png" class="bio-photo text-center">
-                                                                <div class="overlay ">
-                                                                    <div class="hover-text">
-                                                                        <div>                                                                       
-                                                                            <div>
-                                                                                <a href="#"><img src="images/speakers-profile-images/button.png"  alt="no image"></a>                                                   
-                                                                            </div>                                            
-                                                                            <div class="flex-section-row">  
-                                                                                <a href="#"><img src="images/speakers-profile-images/twitter.png"  alt="no image"></a>    
-                                                                                <a href="#"><img src="images/speakers-profile-images/instagram.png"  alt="no image"></a>     
-                                                                                <a href="#"><img src="images/speakers-profile-images/facebook.png"  alt="no image"></a>     
-                                                                            </div>                               
-                                                                        </div> 
-                                                                      </div>
-                                                                </div>
-                                                              </div>  
-                                                              <div>
-                                                                <p>Sandeep Maheshwari</p>
-                                                            </div>  
-                                                        </div>
-                                                        <div>
-                                                            <div class="img-hover" >
-                                                                <img  src="images/speakers-profile-images/view-more.png" class="bio-photo text-center">                                                               
-                                                                    <div class="hover-text" style="left: 45%; top: 50%;">                                         
-                                                                        <div>
-                                                                            <a href="#"><img src="images/speakers-profile-images/button.png"  alt="no image"></a>                                                   
-                                                                        </div>  
-                                                                 </div>
-                                                            </div>
-                                                            <div>
-                                                                <p>View All</p>
-                                                            </div> 
-                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>  
-                                    </div> 
-                                <!-- Podcast  Speakers Profile section End-->
-
-
-
-
-
-
-                          <!-- Latest Podcast Review section Start-->                
-                          <div class="section-space-p ">
-                            <div> 
-                                <div class="trending-section-heading ">
-                                    <h1 class="font-white"> LATEST PODCAST REVIEW</h1>                                            
-                                </div>     
-                            </div>                          
-                            <div class="flex-section-row" >     
-                                <div class="speakers-list-elements">
-                                   
-                                            <div>
-                                                <div class="list-element-flex-row" >     
-                                                    <div class="latest-podcast-review-section-row">
-                                                        <div > <img  src="images/latest-podcast-reviews/podcast-review-image1.png" width="20%" ></div>
-                                                        <div class="CSSgal">
-
-                                                           
-                                                            <s id="s1"></s> 
-                                                            <s id="s2"></s>
-                                                            <s id="s3"></s>
-                                                            
-                                                          
-                                                            <div class="slider">
-                                                             
-                                                                <div class="language-podcast-desc " >
-                                                                    <div class="latest-podcast-review-div">
-                                                                        <div>
-                                                                            <H3>Sometimes Youtube read your mind and in return recommend you with this video!!!<br> Needed this one !! <br>Thanks</H3>    
-                                                                                                                 
-                                                                        </div>
-                                                                        <div class="language-podcast-desc">
-                                                                            <div>
-                                                                                <img src="images/latest-podcast-reviews/circle-review-user-1.png" alt="no image">   
-                                                                            </div>
-                                                                            <div >                                                                
-                                                                                <h2>@PuzzleGamers3251</h2>                            
-                                                                                <img src="images/latest-podcast-reviews/star.png" alt="no image">                                          
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                    
-                                                                </div>
-                                                                 
-                                                                <div class="language-podcast-desc " >
-                                                                    <div class="latest-podcast-review-div">
-                                                                        <div>
-                                                                            <H3>Sometimes2 Youtube read your mind and in return recommend you with this video!!!<br> Needed this one !! <br>Thanks</H3>    
-                                                                                                                 
-                                                                        </div>
-                                                                        <div class="language-podcast-desc">
-                                                                            <div>
-                                                                                <img src="images/latest-podcast-reviews/circle-review-user-1.png" alt="no image">   
-                                                                            </div>
-                                                                            <div >                                                                
-                                                                                <h2>@PuzzleGamers3251</h2>                            
-                                                                                <img src="images/latest-podcast-reviews/star.png" alt="no image">                                          
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                    
-                                                                </div>
-                                                                <div class="language-podcast-desc " >
-                                                                    <div class="latest-podcast-review-div">
-                                                                        <div>
-                                                                            <H3>Sometimes3 Youtube read your mind and in return recommend you with this video!!!<br> Needed this one !! <br>Thanks</H3>    
-                                                                                                                 
-                                                                        </div>
-                                                                        <div class="language-podcast-desc">
-                                                                            <div>
-                                                                                <img src="images/latest-podcast-reviews/circle-review-user-1.png" alt="no image">   
-                                                                            </div>
-                                                                            <div >                                                                
-                                                                                <h2>@PuzzleGamers3251</h2>                            
-                                                                                <img src="images/latest-podcast-reviews/star.png" alt="no image">                                          
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                    
-                                                                </div>
-                                                               
-                                                            </div>
-                                                            
-                                                            <div class="prevNext">
-                                                                <div>
-                                                                    <a href="#s3"><img src="images/left_button.png"></a>
-                                                                    <a href="#s2"><img src="images/right_button.png"></a>
-                                                                </div>
-                                                                <div>
-                                                                    <a href="#s1"><img src="images/left_button.png"></a>
-                                                                    <a href="#s3"><img src="images/right_button.png"></a>
-                                                                </div>
-                                                                <div>
-                                                                    <a href="#s2"><img src="images/left_button.png"></a>
-                                                                    <a href="#s1"><img src="images/right_button.png"></a>
-                                                                </div>
-                                                            </div>
-                                                          
-                                                            <div class="bullets">
-                                                              <a href="#s1"></a>
-                                                              <a href="#s2"></a>
-                                                              <a href="#s3"></a>                                                              
-                                                            </div>
-                                                          
-                                                          </div>
-                                                          
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>  
-                            </div>
-                         <!-- Latest Podcast Review section End-->
-                    </div> 
-                <!--Main bg-gradiant Section End-->   
-                <!-- footer section start-->
-                <div class="section-space-p bg-footer">                
-                    <div class="footer-flex-section-row" > <!--free-delivery-section-->
-                                <div class="footer-align">
-                                    <div class="flex-podcast-icon-row">     
-                                        <img id="footer-logo" src="images/footer-logo.png" alt="Site Logo">                                      
-                                    </div>                                   
-                                    <div class="flex-podcast-icon-row">                                                       
-                                        <div class="footer-menu">
-                                            <a href="home.html">Home</a>
-                                        </div>  
-                                        <div class="footer-menu">
-                                            <a href="AboutUs.html">About Us</a>
-                                        </div>  
-                                        <div class="footer-menu">
-                                            <a href="Audio-podcast.html">Audio</a>
-                                        </div>  
-                                        <div class="footer-menu">
-                                            <a href="Video-podcast.html">Video</a>
-                                        </div>    
-                                        <div class="footer-menu">
-                                            <a href="#">Our Host</a>
-                                        </div> 
-                                        <div class="footer-menu">
-                                            <a href="#">FAQ's</a>
-                                        </div> 
-                                    </div>         
-
-                                    <div class="flex-podcast-icon-row">                                                       
-                                        <div class="podcast-icon">
-                                            <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
-                                            <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                        </div>  
-                                    </div>                                                                              
-                                </div>   
-                    </div> 
+                        </div>
+                    </div>
                 </div>
-                <!--footer section end-->
-           
-        <script type="text/javascript" src="Latest-Podcast-section-js.js"></script>   
-        <script type="text/javascript" src="header-slider.js"></script>      
-    </body>
+                <!-- Latest Podcast Review section End-->
+            </div>
+        </div>
+        <!--Main bg-gradiant Section End-->
+        <!-- footer section start-->
+        <div class="bg-footer">
+            <div class="footer-flex-section-row"> <!--free-delivery-section-->
+                <div class="footer-align">
+                    <div class="flex-podcast-icon-row">
+                        <img id="footer-logo" src="images/footer-logo.png" alt="Site Logo">
+                    </div>
+                    <div class="flex-podcast-icon-row">
+                        <div class="footer-menu">
+                            <a href="home.html">Home</a>
+                        </div>
+                        <div class="footer-menu">
+                            <a href="AboutUs.html">About Us</a>
+                        </div>
+                        <div class="footer-menu">
+                            <a href="Audio-podcast.html">Audio</a>
+                        </div>
+                        <div class="footer-menu">
+                            <a href="Video-podcast.html">Video</a>
+                        </div>
+                        <div class="footer-menu">
+                            <a href="#">Our Host</a>
+                        </div>
+                        <div class="footer-menu">
+                            <a href="#">FAQ's</a>
+                        </div>
+                    </div>
+
+                    <div class="flex-podcast-icon-row">
+                        <div class="podcast-icon">
+                            <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
+                            <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer section end-->
+
+        <script type="text/javascript" src="Latest-Podcast-section-js.js"></script>
+        <script type="text/javascript" src="header-slider.js"></script>
+        <!-- https://codepen.io/ecemgo/pen/WNappPz -->
+</body>
+
 </html>
