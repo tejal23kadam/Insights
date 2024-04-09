@@ -797,6 +797,14 @@ body {
 
 
 /*Latest Podcast slider CSS section Start*/
+
+        .Podcast-review-container{
+         
+          padding: 0 2rem;
+          margin: 0 auto;
+          /* display: flex; */
+          position: relative;
+        }
         .trending-section-heading{
           display: flex;
           justify-content: space-between;
@@ -1996,9 +2004,9 @@ html, body{
   border-radius: 50%;
   transition: transform 0.25s ease;
 }
-.gallery-items:hover .item {
-  /* transform: translateX(-50%) translateY(-50%) scale(1); */
-}
+/* .gallery-items:hover .item {
+   transform: translateX(-50%) translateY(-50%) scale(1); 
+} */
 .gallery-items .item img {
   width: 100%;
   height: 100%;
@@ -2079,10 +2087,7 @@ html, body{
   right: 0%;
   bottom: 0%;
 }
-.fa-icon-bg-color{
 
-
-}
 
 
 
