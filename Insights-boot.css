@@ -798,6 +798,10 @@ body {
 
 /*Latest Podcast slider CSS section Start*/
 
+        .language-flex-section-row{
+          display: flex;
+          padding-bottom: 40px;
+        }
         .Podcast-review-container{
          
           padding: 0 2rem;
@@ -1053,6 +1057,9 @@ body {
         }
         .list-elements{
           width: 100%;
+        }
+        .language-podcast-desc h2{
+          padding-left: 20px;
         }
         /* .language-podcast-desc img {
           padding-right: 15px;
@@ -1554,6 +1561,7 @@ body {
   }
   .language-podcast-desc h2{
     font-size: 25px;
+    
   }
 
   .carousel-inner {
@@ -1628,9 +1636,7 @@ body {
   main {
     width: 500px;
   }
-  .language-podcast-desc {
-    flex-direction: column;
-  }
+  
   .language-podcast-desc p {
     font-size: 18px;
   }
