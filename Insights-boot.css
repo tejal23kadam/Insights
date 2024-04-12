@@ -1043,6 +1043,9 @@ body {
 
 
  /******* podcast list "view all" css start*****/
+      .Speakers-Profile-section-space-p{
+        padding: 60px 0px;
+      }
       .list-element-flex-row{
         display: flex;
         justify-content: space-between;
