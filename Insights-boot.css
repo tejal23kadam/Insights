@@ -1067,6 +1067,10 @@ body {
         /* .language-podcast-desc img {
           padding-right: 15px;
         } */
+
+        .language-podcast-button{
+          text-align: center;
+        }
        
       .list-elements ul {
                   
@@ -1332,7 +1336,7 @@ body {
           * the value of the `max-height` property specifies the transition speed
           * set a very big value (e.g. 9999px) to see the difference
           */              
-          max-height: 300px;
+          max-height: 500px;
         }
 
         [type="checkbox"]:checked + #Speakers-view-all-id {
@@ -1746,7 +1750,16 @@ body {
   main {
     width: 300px;
   }
-  
+  .language-podcast-desc {
+    flex-direction: column;
+  }
+  .list-element-flex-row {
+    flex-direction: column;
+  }
+  .podcast-icon {
+    margin-right: 70px;
+     margin-top: 0;
+  }
   .slide-row {
     width: 1200px;
   }
