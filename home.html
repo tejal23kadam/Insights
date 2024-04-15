@@ -8,8 +8,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
     <link rel="stylesheet" href="Insights-boot.css">
@@ -30,6 +31,8 @@
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
         $(function () {
@@ -39,6 +42,19 @@
             });
         });
     </script>
+    <script>
+        $(function () {
+            var swiper = new Swiper('.blog-slider', {
+                spaceBetween: 30,
+                effect: 'fade',
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                },
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -218,94 +234,54 @@
         <!-- header slider section start-->
         <div>
             <p id="header-trending">#Trending</p>
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active" data-interval="3000">
-                        <div class="flex-section-row">
-                            <div class="slide-col">
-                                <div class="flex-section-column">
-                                    <div class="hero">
-                                        <div class="slider-img">
-                                            <img src="images/slider-images/slider_image1.png" alt="avatar">
+            <div class="blog-slider">
+                <div class="blog-slider__wrp swiper-wrapper">
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
 
-                                        </div>
-                                        <div class="slider-img-desc">
-                                            <h1>Grooming tips</h1>
-                                            <h4>By Ranbeer Allahbadia</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h2>Taking <span class="color-lemon-yellow">Podcast</span> </h2>
-                                    <h2>to the next level</h2>
-                                    <h3 class="color-lemon-yellow">with Ranveer Allahbadia</h3>
-                                    <div class="podcast-icon">
-                                        <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
-                                        <img src="images/slider-icons/listen now_bg_black.png" class="img-top"
-                                            alt="Card Front">
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="images/slider-images/slider_image1.png" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">26 December 2019</span>
+                            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Recusandae voluptate repellendus magni illo ea animi? </div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="images/slider-images/slider_image2.png" alt="">
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">26 December 2019</span>
+                            <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Recusandae voluptate repellendus magni illo ea animi?</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
                         </div>
                     </div>
 
-                    <div class="carousel-item" data-interval="3000">
-                        <div class="flex-section-row">
-                            <div class="slide-col">
-                                <div class="flex-section-column">
-                                    <div class="hero">
-                                        <div class="slider-img">
-                                            <img src="images/slider-images/slider_image2.png" alt="avatar">
-                                        </div>
-                                        <div class="slider-img-desc">
-                                            <h1>Self Love </h1>
-                                            <h4>By Jaya Kishori</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h2>How to <span class="color-pink">Practice</span> </h2>
-                                    <h2>self love</h2>
-                                    <h3 class="color-pink">with Jaya Kishori</h3>
-                                    <div class="podcast-icon">
-                                        <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
-                                        <img src="images/slider-icons/listen now_bg_black.png" class="img-top"
-                                            alt="Card Front">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="images/slider-images/slider_image3.png" alt="">
+                                alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">26 December 2019</span>
+                            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Recusandae voluptate repellendus magni illo ea animi?</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-interval="3000">
-                        <div class="flex-section-row">
-                            <div class="slide-col">
-                                <div class="flex-section-column">
-                                    <div class="hero">
-                                        <div class="slider-img">
-                                            <img src="images/slider-images/slider_image3.png" alt="avatar">
-                                        </div>
-                                        <div class="slider-img-desc">
-                                            <h1>Lack of </h1>
-                                            <h4>self confidence</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h2>Lack <span class="color-light-yellow">of</span></h2>
-                                    <h2>self confidence</h2>
-                                    <h3 class="color-light-yellow">with Sadhguru</h3>
-                                    <div class="podcast-icon">
-                                        <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
-                                        <img src="images/slider-icons/listen now_bg_black.png" class="img-top"
-                                            alt="Card Front">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+                <div class="blog-slider__pagination"></div>
             </div>
         </div>
+
     </div>
     <!--header slider section end-->
     <!--Main bg-gradiant section start-->
@@ -699,9 +675,11 @@
                                                     <div class="language-podcast-desc ">
                                                         <div class="latest-podcast-review-div">
                                                             <div>
-                                                                <h3>Sometimes Youtube read your mind and in return recommend you
-                                                                    with this video!!!<br> Needed this one !! <br>Thanks</h3>
-            
+                                                                <h3>Sometimes Youtube read your mind and in return
+                                                                    recommend you
+                                                                    with this video!!!<br> Needed this one !! <br>Thanks
+                                                                </h3>
+
                                                             </div>
                                                             <div class="language-podcast-desc">
                                                                 <div>
@@ -716,7 +694,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-            
+
                                                 </div>
                                             </div>
                                         </div>
@@ -726,9 +704,11 @@
                                                     <div class="language-podcast-desc ">
                                                         <div class="latest-podcast-review-div">
                                                             <div>
-                                                                <H3>Sometimes2 Youtube read your mind and in return recommend you
-                                                                    with this video!!!<br> Needed this one !! <br>Thanks</H3>
-            
+                                                                <H3>Sometimes2 Youtube read your mind and in return
+                                                                    recommend you
+                                                                    with this video!!!<br> Needed this one !! <br>Thanks
+                                                                </H3>
+
                                                             </div>
                                                             <div class="language-podcast-desc">
                                                                 <div>
@@ -743,7 +723,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -753,9 +733,11 @@
                                                     <div class="language-podcast-desc ">
                                                         <div class="latest-podcast-review-div">
                                                             <div>
-                                                                <H3>Sometimes3 Youtube read your mind and in return recommend you
-                                                                    with this video!!!<br> Needed this one !! <br>Thanks</H3>
-            
+                                                                <H3>Sometimes3 Youtube read your mind and in return
+                                                                    recommend you
+                                                                    with this video!!!<br> Needed this one !! <br>Thanks
+                                                                </H3>
+
                                                             </div>
                                                             <div class="language-podcast-desc">
                                                                 <div>
@@ -770,7 +752,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-            
+
                                                 </div>
                                             </div>
                                         </div>
