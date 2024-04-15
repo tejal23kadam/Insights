@@ -535,14 +535,19 @@ body {
           display: inline;
         }
         #demo .carousel-inner {
-          width: 65%;
+          width: 90%;
           display: inline-block;
           position: relative;
         
-          padding-top: 30.6%;
+          padding-top: 59.6%;
           border-radius: 25px;
           display: block;
           content: "";
+        }
+        #demo .carousel-item { 
+    
+          /* Other Properties */
+          transition: transform 0.3s ease-out; 
         }
         .carousal{
           margin: 200px;
@@ -1436,7 +1441,7 @@ body {
         .latest-podcast-review-div{
           padding: 30px 30px ;
           background-color: white; 
-          margin-left: 90px;
+          /* margin-left: 90px; */
           border-radius: 25px; 
         
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 8px 20px 0 rgba(0, 0, 0, 0.15);
@@ -1932,7 +1937,7 @@ html, body{
 }
 
 .carousel{
-  width:90%;
+  width:75%;
   margin:0px auto;
 }
 .slick-slide{
