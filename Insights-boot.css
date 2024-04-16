@@ -721,12 +721,6 @@ body {
 @media screen and (max-width: 768px) {
   .blog-slider__img {
     transform: translateY(-50%);
-    width: 90%;
- }
-}
-@media screen and (max-width: 576px) {
-  .blog-slider__img {
-    width: 95%;
  }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
