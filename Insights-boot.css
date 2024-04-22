@@ -1039,6 +1039,9 @@ body {
 
 /*Latest Podcast slider CSS section Start*/
 
+        .Latest-review-section-space{
+          padding: 60px;
+        }
         .language-flex-section-row{
           display: flex;
           padding-bottom: 40px;
@@ -1660,6 +1663,210 @@ body {
 
         /*latest podcast review slider start*/
 
+        .wrapper{
+          width:100%;
+          padding-top: 20px;
+          text-align:center;
+        }
+        
+        .carousel{
+          width:75%;
+          margin:0px auto;
+        }
+        .slick-slide{
+          margin:10px;
+        }
+        .slick-slide img{
+          width:100%;
+        }
+        .slick-prev, .slick-next{
+          background: #000;
+          border-radius: 15px;
+          border-color: transparent;
+        }
+        .card{
+          border: 2px solid #fff;
+          box-shadow: 1px 1px 15px #ccc;
+        }
+        .card-body{
+          background: #fff;
+          width: 100%;
+          vertical-align: top;
+        }
+        .card-content{
+          text-align: left;
+          color: #333;
+          padding: 15px;
+        }
+        .card-text{
+          font-size: 14px;
+          font-weight: 300;
+        }
+        
+        
+        
+        
+        
+        
+        .speakers-list-elements{
+          position: relative;
+        }
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+        
+        
+        .image-gallery {
+          padding: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+         .gallery-items { 
+         
+          border-radius: 50%;
+          transition: background-color 0.25s ease;
+        }
+        .gallery-items:hover {
+          background-color: transparent;
+          cursor: pointer;
+        }
+        .gallery-items .item {
+          position: relative;
+          /* left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%) scale(0.9);  */
+          overflow: hidden;
+          border-radius: 50%;
+          transition: transform 0.25s ease;
+        }
+        /* .gallery-items:hover .item {
+           transform: translateX(-50%) translateY(-50%) scale(1); 
+        } */
+        .gallery-items .item img {
+          width: 100%;
+          height: 100%;
+          transition: transform 0.25s ease;
+        }
+        .item:hover img {
+          transform: scale(1.08)
+        }
+        .gallery-items .item .item-title {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+         .gallery-items .item .transparent-back {
+          position: absolute;
+          background-color: #000000;
+          width: 100%;
+          height: 100%;
+          top: 50%;
+          left: 50%;
+          opacity: 0;
+          transform: translateX(-50%) translateY(-50%);
+        }
+        .gallery-items .item .transparent-back:hover {
+          opacity: 0;
+          animation: 0.25s fade-back forwards ease;
+        }
+        @keyframes fade-back {
+          0% { opacity: 0; }
+          100% { opacity: 0.5; }
+        }
+        .item-title .title-text > p:nth-child(1) {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 100%;
+          margin-left: 10px;
+          font-size: 3.5em;
+          pointer-events: none;
+          transform: translateX(-50%) translateY(-500%);
+          color: #ffffff;
+          opacity: 0;
+          text-align: center;
+          transition: transform 0.25s ease, opacity 0.25s ease;
+        }
+        .item-title:hover .title-text > p:nth-child(1) {
+           transform: translateX(-50%) translateY(-60%); 
+          opacity: 1;
+        }
+        .title-text > p:nth-child(2) {
+          position: absolute;
+          width: 100%;
+          left: 50%;
+          top: 50%;
+          margin-left: 10px;
+          font-size: 1.5em;
+          pointer-events: none;
+          transform: translateX(-50%) translateY(500%);
+          color: #cccccc;
+          opacity: 0;
+          text-align: center;
+          transition: transform 0.25s ease, opacity 0.25s ease;
+        }
+        .title-text > p i{
+          margin-right: 20px;
+        }
+        .item-title:hover .title-text > p:nth-child(2) {
+          transform: translateX(-50%) translateY(60%); 
+          opacity: 1;
+        }
+        
+            /*hire me on fiverr.com*/
+        .hire-me {
+          position: fixed;
+          right: 0%;
+          bottom: 0%;
+        }
+        
+        
+        
+        
+        
+        
+        
         .latest-podcast-review-div{
           padding: 30px 30px ;
           background-color: white; 
@@ -1669,7 +1876,15 @@ body {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 8px 20px 0 rgba(0, 0, 0, 0.15);
           text-align: left;
         }
-
+        
+        .podcast-review-desc {  
+          display: flex;
+          border-radius: 20px;
+          /* padding: 15px 15px; */
+          align-items: center;
+          width: 100%;
+          overflow: hidden; 
+          }
 
 
       
@@ -1894,7 +2109,10 @@ body {
   .language-podcast-desc p {
     font-size: 18px;
   }
-
+  #demo .carousal{
+    padding-top: 20px;
+    padding-left: 10px;
+  }
   .language-podcast-desc h2{
     font-size: 20px;
   }
@@ -1941,7 +2159,7 @@ body {
   .language-podcast-desc h2{
     font-size: 20px;
   }
-  
+ 
   .slide-row {
     width: 2000px;
   }
@@ -1981,6 +2199,12 @@ body {
   .content h3 {
     font-size: 1.2rem;
     margin-top: 20px;
+  }
+  .Podcast-review-container {
+    padding: 0;
+  }
+  .Latest-review-section-space{
+    padding: 1px;
   }
 }
 @media (max-width: 880px) {
@@ -2059,6 +2283,9 @@ body {
   .title-text > p i{
     margin-right: 10px;
     scale: 0.9;
+  }
+  .carousal{
+    margin: 20px auto;
   }
 }
 @media (max-width: 520px) {
@@ -2160,212 +2387,6 @@ body {
 
 
 
-
-
-
-
-
-html, body{
-  margin: 0;
-  padding: 0;
-}
-.wrapper{
-  width:100%;
-  padding-top: 20px;
-  text-align:center;
-}
-
-.carousel{
-  width:75%;
-  margin:0px auto;
-}
-.slick-slide{
-  margin:10px;
-}
-.slick-slide img{
-  width:100%;
-}
-.slick-prev, .slick-next{
-  background: #000;
-  border-radius: 15px;
-  border-color: transparent;
-}
-.card{
-  border: 2px solid #fff;
-  box-shadow: 1px 1px 15px #ccc;
-}
-.card-body{
-  background: #fff;
-  width: 100%;
-  vertical-align: top;
-}
-.card-content{
-  text-align: left;
-  color: #333;
-  padding: 15px;
-}
-.card-text{
-  font-size: 14px;
-  font-weight: 300;
-}
-
-
-
-
-
-
-.speakers-list-elements{
-  position: relative;
-}
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-
-.image-gallery {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
- .gallery-items { 
- 
-  border-radius: 50%;
-  transition: background-color 0.25s ease;
-}
-.gallery-items:hover {
-  background-color: transparent;
-  cursor: pointer;
-}
-.gallery-items .item {
-  position: relative;
-  /* left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%) scale(0.9);  */
-  overflow: hidden;
-  border-radius: 50%;
-  transition: transform 0.25s ease;
-}
-/* .gallery-items:hover .item {
-   transform: translateX(-50%) translateY(-50%) scale(1); 
-} */
-.gallery-items .item img {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.25s ease;
-}
-.item:hover img {
-  transform: scale(1.08)
-}
-.gallery-items .item .item-title {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
- .gallery-items .item .transparent-back {
-  position: absolute;
-  background-color: #000000;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translateX(-50%) translateY(-50%);
-}
-.gallery-items .item .transparent-back:hover {
-  opacity: 0;
-  animation: 0.25s fade-back forwards ease;
-}
-@keyframes fade-back {
-  0% { opacity: 0; }
-  100% { opacity: 0.5; }
-}
-.item-title .title-text > p:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  margin-left: 10px;
-  font-size: 3.5em;
-  pointer-events: none;
-  transform: translateX(-50%) translateY(-500%);
-  color: #ffffff;
-  opacity: 0;
-  text-align: center;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-}
-.item-title:hover .title-text > p:nth-child(1) {
-   transform: translateX(-50%) translateY(-60%); 
-  opacity: 1;
-}
-.title-text > p:nth-child(2) {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  margin-left: 10px;
-  font-size: 1.5em;
-  pointer-events: none;
-  transform: translateX(-50%) translateY(500%);
-  color: #cccccc;
-  opacity: 0;
-  text-align: center;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-}
-.title-text > p i{
-  margin-right: 20px;
-}
-.item-title:hover .title-text > p:nth-child(2) {
-  transform: translateX(-50%) translateY(60%); 
-  opacity: 1;
-}
-
-    /*hire me on fiverr.com*/
-.hire-me {
-  position: fixed;
-  right: 0%;
-  bottom: 0%;
-}
 
 
 
