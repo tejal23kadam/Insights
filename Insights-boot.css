@@ -1079,7 +1079,7 @@ body {
         }
       .post-slide {
         background: #fff;
-        margin: 20px 15px 20px;
+       
         border-radius: 15px;
         /*box-shadow: 0px 14px 22px -9px #bbcbd8;*/
         border: 20px solid white;
@@ -1663,6 +1663,47 @@ body {
 
         /*latest podcast review slider start*/
 
+        #review-slider .post-slide {
+          background: #fff;
+          margin: 20px 95px 20px;
+          border-radius: 15px;
+          /*box-shadow: 0px 14px 22px -9px #bbcbd8;*/
+          border: 20px solid white;
+          border-radius: 20px;
+        }  
+
+        #review-profile-img {
+          display: block; 
+          width: 80px; 
+          height: 80px;
+        }
+        #review-star{
+          display: block; 
+          width: 70%; 
+          height: 20px;
+
+        }
+        #review-slider .owl-nav button.owl-prev{
+          z-index: 1;
+          width: 40px;
+          height: 40px;          
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 2%;
+          transform: translatey(-160%);
+        }
+        #review-slider .owl-nav button.owl-next {
+          z-index: 1;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          right: 5%;
+          transform: translatey(-160%);
+        }
+
         .wrapper{
           width:100%;
           padding-top: 20px;
@@ -1879,6 +1920,7 @@ body {
        
         .podcast-review-desc {  
           display: flex;
+          flex-direction: column;
           border-radius: 20px;
           /* padding: 15px 15px; */
           align-items: center;
