@@ -3,6 +3,7 @@ $(document).ready(function() {
     $("#review-slider").owlCarousel({
             items: 1,
             margin:20,
+            animateIn: 'fadeIn',
             itemsDesktop: [1199, 3],
             itemsDesktopSmall: [980, 2],
             itemsMobile: [600, 1],

@@ -1039,9 +1039,7 @@ body {
 
 /*Latest Podcast slider CSS section Start*/
 
-        .Latest-review-section-space{
-          padding: 60px;
-        }
+      
         .language-flex-section-row{
           display: flex;
           padding-bottom: 40px;
@@ -1209,7 +1207,7 @@ body {
         z-index: 1;
         width: 40px;
         height: 40px;
-        background-color: red;
+        
         border-radius: 50%;
         position: absolute;
         top: 0%;
@@ -1288,7 +1286,7 @@ body {
 
  /******* podcast list "view all" css start*****/
       .Speakers-Profile-section-space-p{
-        padding: 60px 0px;
+        padding-top : 100px;
       }
       .list-element-flex-row{
         display: flex;
@@ -1690,7 +1688,7 @@ body {
           border-radius: 50%;
           position: absolute;
           top: 50%;
-          left: 2%;
+          left: 11%;
           transform: translatey(-160%);
         }
         #review-slider .owl-nav button.owl-next {
@@ -1700,10 +1698,14 @@ body {
           border-radius: 50%;
           position: absolute;
           top: 50%;
-          right: 5%;
+          right: 14%;
           transform: translatey(-160%);
         }
-
+        #review-slider .owl-nav button span{
+          background-color:transparent;
+          border-radius: 0;
+          width: 40%;
+        }
         .wrapper{
           width:100%;
           padding-top: 20px;
@@ -1927,7 +1929,12 @@ body {
           width: 100%;
           overflow: hidden; 
           }
-
+          #review-slider .post-slide .latest-blog-desc{
+            line-height: 24px;
+            border-radius: 9px;           
+            text-align: left;           
+            background-color: white;
+          }
 
       
         .introduce{
@@ -2095,6 +2102,9 @@ body {
   #header-trending {
     margin: 20px 170px;
   }
+  #review-slider .post-slide {
+    margin: 20px 65px 20px;
+  }
    /*.language-podcast-desc { 
     flex-direction: column;
   }
@@ -2150,6 +2160,9 @@ body {
   .latest-podcast-review-div h3{
     font-size: 1.5vm;
   }
+  /* #review-slider .post-slide {
+    margin: 20px 50px 20px;
+  } */
   .language-podcast-desc p {
     font-size: 18px;
   }
@@ -2195,6 +2208,11 @@ body {
   }
  
 }
+@media (max-width: 991px) {
+  #review-slider .post-slide {
+    margin: 20px 100px 20px;
+  }
+}
 
 @media (max-width: 914px) {
   main {
@@ -2202,8 +2220,7 @@ body {
   }
   .language-podcast-desc h2{
     font-size: 20px;
-  }
- 
+  } 
   .slide-row {
     width: 2000px;
   }
@@ -2223,18 +2240,15 @@ body {
   .hero img {
     width: 100%;
   }
-
   .content {
     width: 320px;
     height: 200px;
     padding: 20px;
     left: 340px;
   }
-
   .content p {
     font-size: 0.9rem;
-  }
-
+  } 
   .content h2 {
     font-size: 35px;
     margin-top: 20px;
@@ -2247,9 +2261,7 @@ body {
   .Podcast-review-container {
     padding: 0;
   }
-  .Latest-review-section-space{
-    padding: 1px;
-  }
+  
 }
 @media (max-width: 880px) {
   .language-podcast-desc h2{
@@ -2340,6 +2352,9 @@ body {
     margin-right: 0px;
     scale: 0.5;
     
+  }
+  #review-slider .post-slide{
+    margin: 10px 35px 20px;
   }
   .title-text > p:nth-child(2) {
     top: 35%;
