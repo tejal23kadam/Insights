@@ -6,19 +6,15 @@ $(document).ready(function() {
           itemsDesktop: [1199, 3],
           itemsDesktopSmall: [980, 2],
           itemsMobile: [600, 1],
-          navigation: true,
-          loop:true,
-     
-          navigationText: ["", ""],
+          navigation : false,
+          loop:true,     
+          
           //pagination: false, //for version 1
           dots: false, // for version 2         
           //autoPlay:true // for version 1 
           autoplay: true,//for version 2 
           slideTransition: 'linear',
-          
           autoplaySpeed: 1000,  
-        
-          
           responsiveClass:true,
               responsive:{
                   0:{
@@ -51,11 +47,13 @@ $(document).ready(function() {
                 }
               }
         });
-  });
- 
 
-  $(document).ready(function(){
-    $('.slider').slick({
-      dots: true,
-    });
-  });
+        // Custom Button
+        $('#customNextBtn1').click(function() {
+          $("#news-slider").trigger('next.owl.carousel');
+        });
+        $('#customPreviousBtn2').click(function() {
+          $("#news-slider").trigger('prev.owl.carousel');
+          });
+      });
+ 
