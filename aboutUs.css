@@ -499,3 +499,66 @@ body {
         background: linear-gradient(90deg, rgba(255, 104, 135, 0.5) 0%, rgba(14, 22, 81, 0.5) 100%);
       }
 /*header nav bar CSS end*/
+
+/*about insights section CSS start*/
+
+      .about-insights-section{       
+        padding: 20px 0px;  
+      }
+      .about-insights-section h1{
+        color: #FAFAFA;
+      }
+      .about-insights-section p{
+        color: #FAFAFA;
+      }
+/*about insights section CSS end*/
+
+/*our values section CSS start*/
+
+      .our-values-section{
+        background-color: black; 
+        padding: 20px 0px;  
+        border-radius: 20px;
+      }
+      .our-values-section h1{
+        color: #FAFAFA;
+      }
+      .our-values-section p{
+        color: #FAFAFA;
+      }
+      .our-values-section-flex{
+        display: flex;
+        flex-direction: column;
+      }
+      .field-container {
+        position:relative;
+        max-width:1000px;
+        display:flex ;
+        
+        
+      }
+      .field {
+       
+        height: auto;
+        width: 30%;
+      }
+      .ball {
+        left: calc(2.3% * 8);
+        display: inline-block;
+        position:absolute;
+        top: 50%;
+        z-index: 2;
+        width: 55%;
+        transform: translate(10%, -50%);
+      }
+      .ball1 {
+        left: calc(8.6% * 8);
+        display: inline-block;
+        position:absolute;
+        top: 30%;
+        height: auto;
+        width: 30%;
+        z-index: 1;
+        transform: translate(10%, -30%);
+      }
+/*our values section CSS end*/
