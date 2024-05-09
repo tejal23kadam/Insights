@@ -1,125 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="aboutUs.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <link rel="stylesheet" href="aboutUs.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <!-- Basic stylesheet -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous" />
+        <!--Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src=" https://kenwheeler.github.io/slick/slick/slick.js"></script>
+
+        <!-- Owl Carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            $(function () {
+                $("a[class='Update']").click(function () {
+                    $("#MyPopup").modal("show");
+                    return false;
+                });
+            });
+        </script>
+    </head>
 </head>
+
 <body>
-    <div>
+    <div class="detail-page-top-header-background">
         <!--header gradiant section start-->
-        <div class="detail-page-top-header-background">
-            <div class="top-header-logo-main-menu "> <!--ec-header-bottom-->
-                <div class="container position-relative">
-                    <div class="row">
-                        <div class="pc-flex"> <!--ec-flex-->
-                            <!-- Header Logo Start -->
-                                <div class="align-self-center">
-                                    <div class="header-logo">
-                                        <img src="images/navbar-images/header-logo.png" alt="Site Logo" height="40px">                            
-                                    </div>
-                                </div>
-                            <!-- Header Logo End -->
+        <!-- header Logo & main menu Start -->
+        <div class="menu-header">
+            <div class="container-fluid main-nav">
+                <input type="checkbox" name="check" id="check">
+                <div class="logo-container">
+                    <img src="images/navbar-images/header-logo.png" alt="Site Logo" height="40px">
+                </div>
 
-                            <!-- Header Menu Start -->
-                                <div class="align-self-center">
-                                    <div id="pc-main-menu-desk" class="d-none d-lg-block sticky-nav">
-                                        <div class="container position-relative">
-                                            <div class="row">
-                                                <div class="align-self-center">
-                                                    <div class="pc-main-menu">
-                                                        <ul>
-                                                            <li><a href="#">Home</a></li>
-                                                            <li><a href="#">About Us</a></li> 
-                                                            <li><a href="#">Audio</a></li> 
-                                                            <li><a href="#">Video</a></li>    
-                                                            <li><a href="#">Our Host</a></li> 
-                                                            <li><a href="#">FAQ's</a></li>                                                     
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+                <div class="nav-btn">
+                    <div class="nav-links">
+                        <ul>
+                            <li class="nav-link" style="--i: .6s">
+                                <a href="#">Home</a>
+                            </li>
+                            <!-- multi level drop down menu-->
+                            <!--<li class="nav-link" style="--i: .85s">
+                            <a href="#">AboutUs<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                              <ul>
+                                <li class="dropdown-link">
+                                  <a href="#">Link 1</a>
+                                </li>
+                                <li class="dropdown-link">
+                                  <a href="#">Link 2</a>
+                                </li>
+                                <li class="dropdown-link">
+                                  <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                                  <div class="dropdown second">
+                                    <ul>
+                                      <li class="dropdown-link">
+                                        <a href="#">Link 1</a>
+                                      </li>
+                                      <li class="dropdown-link">
+                                        <a href="#">Link 2</a>
+                                      </li>
+                                      <li class="dropdown-link">
+                                        <a href="#">Link 3</a>
+                                      </li>
+                                      <li class="dropdown-link">
+                                        <a href="#">More<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                          <ul>
+                                            <li class="dropdown-link">
+                                              <a href="#">Link 1</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                              <a href="#">Link 2</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                              <a href="#">Link 3</a>
+                                            </li>
+                                            <div class="arrow"></div>
+                                          </ul>
                                         </div>
-                                    </div>
-                                </div>
-                            <!-- Header Menu  End -->
+                                      </li>
+                                      <div class="arrow"></div>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="dropdown-link">
+                                  <a href="#">Link 4</a>
+                                </li>
+                                <div class="arrow"></div>
+                              </ul>
+                            </div>
+                          </li>-->
+                            <!--  <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Audio<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                              <ul>
+                                <li class="dropdown-link">
+                                  <a href="#">Link 1</a>
+                                </li>
+                                <li class="dropdown-link">
+                                  <a href="#">Link 2</a>
+                                </li>
+                                <li class="dropdown-link">
+                                  <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                                  <div class="dropdown second">
+                                    <ul>
+                                      <li class="dropdown-link">
+                                        <a href="#">Link 1</a>
+                                      </li>
+                                      <li class="dropdown-link">
+                                        <a href="#">Link 2</a>
+                                      </li>
+                                      <li class="dropdown-link">
+                                        <a href="#">Link 3</a>
+                                      </li>
+                                      <li class="dropdown-link">
+                                        <a href="#">More<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                          <ul>
+                                            <li class="dropdown-link">
+                                              <a href="#">Link 1</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                              <a href="#">Link 2</a>
+                                            </li>
+                                            <li class="dropdown-link">
+                                              <a href="#">Link 3</a>
+                                            </li>
+                                            <div class="arrow"></div>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <div class="arrow"></div>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="dropdown-link">
+                                  <a href="#">Link 4</a>
+                                </li>
+                                <div class="arrow"></div>
+                              </ul>
+                            </div>
+                          </li>-->
+                            <li class="nav-link" style="--i: 1.35s">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="nav-link" style="--i: 1.35s">
+                                <a href="#">Audio</a>
+                            </li>
+                            <li class="nav-link" style="--i: 1.35s">
+                                <a href="#">Video</a>
+                            </li>
+                            <li class="nav-link" style="--i: 1.35s">
+                                <a href="#">our Host</a>
+                            </li>
 
-                            <!-- Header button Start -->
-                                <div class="flex-section-row">                                    
-                                    <div id="header-contactUs-button">
-                                        <div class="ec-header-bottons">                               
-                                            <a href="#"><img src="images/navbar-images/playlist.png" alt="no image"></a>
-                                        </div>
-                                    </div>    
-                                    <div id="header-contactUs-button">
-                                        <div class="ec-header-bottons">                               
-                                            <a href="#"><img src="images/navbar-images/Profile.png" alt="no image"></a>
-                                        </div>
-                                    </div>    
-                                </div>    
-                                
-                            <!--Header button End -->
+                        </ul>
+                    </div>
+                    <div class="log-sign" style="--i: 1.8s">
+                        <a class="Update" href=""><img src="images/navbar-images/search bar.png" alt="no image"></a>
+                        <a href="#"><img src="images/navbar-images/playlist.png" alt="no image"></a>
+                        <a href="#"><img src="images/navbar-images/Profile.png" alt="no image"></a>
+                    </div>
+                </div>
 
-                            <!--Mobile menu start-->
-                                <div class="dropdown" id="header-side-menu">                              
-                                    <i class="fa fa-bars" aria-hidden="true"></i>
-                                    <div class="dropdown-content">
-                                        <div class="align-self-center">
-                                            <div class="pc-main-menu"> <!--ec-main-menu-->
-                                                <ul>
-                                                    <li><a href="home.html">Home</a></li>
-                                                    <li><a href="AboutUs.html">About Us</a></li> 
-                                                    <li><a href="Audio-podcast.html">Audio</a></li> 
-                                                    <li><a href="Video-podcast.html">Video</a></li>    
-                                                    <li><a href="#">Our Host</a></li>   
-                                                    <li><a href="#">FAQ's</a></li>                                         
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                            <!--Mobile menu end -->
-                        </div>
+                <div class="hamburger-menu-container">
+                    <div class="hamburger-menu">
+                        <div></div>
                     </div>
                 </div>
             </div>
-            <!-- header Logo & main menu End-->
-            <!--Search bar-->
-            <div class="section-space-p ">
-                <div class="flex-section-column" >                      
-                    <label for="checkBtn" class="toggle"><img src="images/navbar-images/search bar.png" alt="no image"></label>
-                    <input type="checkbox" name="one" id="checkBtn">
-                    <div class="search-bar-container" id="listing">
-                        <input type="text" placeholder="Search">                            
-                       </div> 
-                </div> 
-            </div>                
-            <!--search bar-->    
-            <!-- header Title section start-->
-            <div class="section-space-p">                
-                <div class="header-section-row" > 
-                    <div>
-                        <p id="header-trending">About Us</p>                                                          
-                    </div>  
-                </div>                    
+            <main>
+                <section>
+                    <div class="overlay"></div>
+                </section>
+            </main>
+            <div class="jumbotron text-center" style="background: transparent;">
+                <h1 class="header-trending">About Us</h1>
             </div>
-            <!-- header Title section end-->  
         </div>
-        <!--header gradiant section end-->
 
-        <!--Main bg-gradiant section start--> 
-        <div class="bg-gradiant" >
-          
-            <!-- About section start -->
-            <div class="section-space-p">         
-                <h1 class="about-page-all-heading">About Insights</h1>       
-                <div class="header-section-row" > 
-                    <div class="about-page-all-text">                        
-                            ‘Insights’ is a podcast brand of ‘Self-help and Motivation ‘service that is provide connection
+        <!-- header Logo & main menu End-->
+
+        <!--Search bar Modal Popup start-->
+        <div id="MyPopup" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="navbar-form " role="search">
+                            <div class="form-group search-bar-container">
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Search bar Modal Popup End-->
+    </div>
+    <!--header gradiant section end-->
+
+    <div class="container my-5" style="max-width: 100%;">
+        <div class="row">
+         
+          <div class="col-lg-7">
+            <div class="p-5 mt-4">
+                <h1 class="display-4">About Insights</h1>
+                <p class="lead" style="font-size: 17px;">
+                    ‘Insights’ is a podcast brand of ‘Self-help and Motivation ‘service that is provide connection
                             between Professional Speakers and their Listners. This application Provides an easy-to-use
                             abstraction over the sea of podcasting shows in the field of motivation and encouragement.
                             This application is designed to make it very easy for the listener to search for motivational
@@ -129,130 +247,14 @@
                             the opportunity to generate playlists that takes a user’s Interest into account.
                             Second, it has an expansive bank of Audio/video for ‘self-help & Motivation’ service available
                             so there is no worry of not having enough Podcast track for the user.
-
-                    </div>  
-                    <div class="about-page-first-para">                        
-                        <img src="images/about-us-page/about-insight-image.png" alt="no image">
-
-                </div>  
-                </div>                    
-            </div> 
-            <!-- About section End -->            
+                </p>
+              </div>
+          </div>
+          <div class="col-lg-5">
            
-            <!--our values section start-->
-                <div class="section-space-p our-values-bg">
-                    <h1 class="about-page-all-heading">Our Values</h1>
-                    <div class="header-section-row" > 
-                        <div class="about-page-all-text" >                        
-                            What do you value in life and work? And what environment do you thrive in?
-                            If your values are in sync with ours, you're in for an exciting and meaningful adventure.
-                        </div>
-                    </div>  
-                   <!-- header slider section start-->
-                   <div class="section-space-p">                
-                    <div class="flex-section-row position-relative" > 
-                        <img src="images/about-us-page/image-1.png" alt="no image">
-                        <img class="about-us-absolute-img" src="images/about-us-page/image-2.png" alt="no image" >
-                        <img src="images/about-us-page/image-3.png" alt="no image">
-                    </div>                    
-                </div>            
-            <!-- header slider section end--> 
-                    <div class="about-us-flex-section-row ">                        
-                        <div>                            
-                            <p class="about-page-all-text">Self Help</p>
-                            <div class="our-values-section-description our-values-sub-section">
-                                Self-help or self-improvement is a self-directed improvement of 
-                                oneself[1]—economically, physically, intellectually, or
-                                 emotionally—often with a substantial psychological basis.
-                                When engaged in self-help, people often use publicly available information, or support 
-                                groups—on the Internet as well as in person—in which people in similar situations work
-                                together.[1] From early examples in pro se legal practice[2] and home-spun advice, 
-                                the connotations of the word have spread and often apply particularly to education, 
-                                business, exercise, psychology, and psychotherapy, as commonly distributed through the popular genre
-                                of self-help books. According to the APA Dictionary of Psychology, potential 
-                                benefits of self-help groups that professionals may not be able to provide include friendship, 
-                                emotional support, experiential knowledge, identity, meaningful roles, and a sense of belonging.[1]
-                            </div>
-                        </div>
-                        <div>
-                            <p class="about-page-all-text">Motivation</p>
-                            <div class="our-values-section-description our-values-sub-section">
-                                Motivational states are characterized by their direction, intensity, and persistence.
-                                Many types of motivation are discussed in the academic literature. Intrinsic motivation 
-                                comes from internal factors like enjoyment and curiosity. It contrasts with extrinsic motivation,
-                                which is driven by external factors like obtaining rewards and avoiding punishment.
-                                For conscious motivation, the individual is aware of the motive driving the behavior, 
-                                which is not the case for unconscious motivation. Other types include rational and irrational
-                                motivation, biological and cognitive motivation,
-                                short-term and long-term motivation, and egoistic and altruistic motivation.
-                            </div>
-                        </div>
-                    </div>                  
-                </div>
-            <!--our values section end-->  
-            
-            
-             <!--our mission section start-->
-             <div class="section-space-p">
-                <h1 class="about-page-all-heading">Our Mission</h1>
-                <div class="header-section-row" > 
-                    <div class="about-page-all-text" >                        
-                        Here at ‘Insights’ , we like to think of ourselves as a band.
-                        Our mission is to unlock the potential of human creativity—by giving a million creative
-                         artists the opportunity to live off their
-                         art and billions of fans the opportunity to enjoy and be inspired by it.
-                    </div>                       
-                </div>                    
-            </div>
-        <!--our mission section end-->
-        <!-- footer section start-->
-        <div class="section-space-p bg-footer">                
-            <div class="footer-flex-section-row" > <!--free-delivery-section-->
-                        <div class="footer-align">
-                            <div class="flex-podcast-icon-row">     
-                                <img id="footer-logo" src="images/footer-logo.png" alt="Site Logo">                                      
-                            </div>                                   
-                            <div class="flex-podcast-icon-row">                                                       
-                                <div class="footer-menu">
-                                    <a href="home.html">Home</a>
-                                </div>  
-                                <div class="footer-menu">
-                                    <a href="AboutUs.html">About Us</a>
-                                </div>  
-                                <div class="footer-menu">
-                                    <a href="Audio-podcast.html">Audio</a>
-                                </div>  
-                                <div class="footer-menu">
-                                    <a href="Video-podcast.html">Video</a>
-                                </div>    
-                                <div class="footer-menu">
-                                    <a href="#">Our Host</a>
-                                </div> 
-                                <div class="footer-menu">
-                                    <a href="#">FAQ's</a>
-                                </div> 
-                            </div>         
-
-                            <div class="flex-podcast-icon-row">                                                       
-                                <div class="podcast-icon">
-                                    <img src="images/slider-icons/listen now_bg_transparent.png" alt="Card Back">
-                                    <img src="images/slider-icons/listen now_bg_black.png" class="img-top" alt="Card Front">
-                                </div>  
-                                <div class="podcast-icon">
-                                    <img src="images/slider-icons/spotify_bg_transparent.png" alt="Card Back">
-                                    <img src="images/slider-icons/spotify_bg_black.png" class="img-top" alt="Card Front">
-                                </div>  
-                                <div class="podcast-icon">
-                                    <img src="images/slider-icons/youtube_bg_transparent.png" alt="Card Back">
-                                    <img src="images/slider-icons/youtube_bg_black.png" class="img-top" alt="Card Front">
-                                </div>   
-                            </div>                                                                              
-                        </div>   
-                    </div> 
-                </div>
-                <!--footer section end-->
-            </div>         
-    <!--Main bg-gradiant section End-->     
-    </div>
+            <img class="w-100 shadow" src="images/about-us-page/about-insight-image.png" style="border-radius: 20px;"  />
+          </div>
+      </div>
 </body>
+
 </html>
