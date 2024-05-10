@@ -525,40 +525,139 @@ body {
       }
       .our-values-section p{
         color: #FAFAFA;
+        text-align: justify;
+        text-justify: inter-word;
       }
       .our-values-section-flex{
         display: flex;
         flex-direction: column;
+       
       }
-      .field-container {
+      .field-container-row {
         position:relative;
         max-width:1000px;
         display:flex ;
-        
-        
       }
-      .field {
-       
+      .field {       
         height: auto;
-        width: 30%;
+        width: 25%;
+        margin-left: 50px;
       }
       .ball {
-        left: calc(2.3% * 8);
+        left: calc(2.7% * 8);
         display: inline-block;
         position:absolute;
         top: 50%;
         z-index: 2;
-        width: 55%;
+        width: 50%;
         transform: translate(10%, -50%);
       }
       .ball1 {
-        left: calc(8.6% * 8);
+        left: calc(8.7% * 8);
         display: inline-block;
         position:absolute;
         top: 30%;
         height: auto;
-        width: 30%;
+        width: 25%;
         z-index: 1;
         transform: translate(10%, -30%);
       }
+
+      .our-values-text-section{
+        display: flex;
+      }
+      .our-values-text-section div{
+        padding: 40px;
+      }
 /*our values section CSS end*/
+
+/*media query start*/
+
+@media (min-width: 1441px) {
+  .field {   
+    margin-left: 20px;
+    width: 30%;
+  }
+  .ball {
+    left: calc(2.7% * 8);    
+    width: 60%;
+  }
+  .ball1 {
+    left: calc(9.8% * 8);   
+    width: 30%;
+  }
+  #single-image-section { display: none; }
+  #responsive-image-section{ display: block; } 
+ }
+@media (max-width: 1440px) { 
+  .field {   
+    margin-left: 20px;
+    width: 30%;
+  }
+  .ball {
+    left: calc(2.7% * 8);    
+    width: 60%;
+  }
+  .ball1 {
+    left: calc(9.8% * 8);   
+    width: 30%;
+  }
+  #single-image-section { display: none; }
+  #responsive-image-section{ display: block; } 
+}
+@media (max-width: 1024px) { 
+  .our-values-text-section{
+    flex-direction: column;
+   }
+  .field {   
+    margin-left: 30px;
+    width: 25%
+  }
+  .ball {
+    left: calc(2.5% * 8);
+    width: 50%;    
+  }
+  .ball1 {
+    left: calc(8.5% * 8);  
+    width: 25% 
+  }
+  #single-image-section { display: none; }
+  #responsive-image-section{ display: block; } 
+}
+@media (max-width: 767px) {
+  .our-values-text-section{
+   flex-direction: column;
+  }
+  #single-image-section { display: none; }
+  #responsive-image-section{ display: block; } 
+}
+@media (max-width: 767px) and (min-width: 0px) {
+  #single-image-section { 
+    display: block;
+    text-align: center;
+   }
+  #responsive-image-section{ 
+    display: none; 
+  } 
+  .field-container-row {
+   flex-direction: column;
+   position: relative;
+  }
+  .field {   
+   
+    width: 80%;
+    position: relative;
+    bottom: 20px;
+  }
+  .ball {
+    left: 0 ;    
+    width: 80%;
+    position: relative;
+  }
+  .ball1 {
+    left: 0 ;   
+    width: 80%;
+    position: relative;
+  }
+}
+/*media query end*/
