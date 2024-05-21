@@ -41,7 +41,7 @@ $(document).ready(function() {
                       loop:true
                   },
                   1550:{
-                    items:4,
+                    items:3,
                     nav:true,
                     loop:true
                 }

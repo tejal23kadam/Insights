@@ -84,8 +84,8 @@ section {
 
 }
 
-.container {
-  /* max-width: 65rem; */
+.nav-container {
+  max-width: 75rem;
   padding: 0 2rem;
   margin: 0 auto;
   display: flex;
@@ -168,7 +168,7 @@ section {
 .nav-link>a {
   line-height: 3rem;
   color: var(--clr-light);
-  padding: 10px 3rem;
+  padding: 10px 2rem;
   letter-spacing: 1px;
   font-size: 1.4rem;
   display: flex;
@@ -566,10 +566,11 @@ section {
 
 .about-insights-section {
   padding: 20px 0px;
+  color: #FAFAFA;
 
 }
 
-.about-insights-section h1 {
+/* .about-insights-section h1 {
   color: #FAFAFA;
   font-family: Poppins;
   font-size: 48px;
@@ -578,7 +579,7 @@ section {
   text-align: left;
 
 
-}
+} */
 
 .about-insights-section h3 {
   color: #FAFAFA;
@@ -617,7 +618,9 @@ section {
 
 .Sign-up-for-our-newsletter-section {
   background-color: black;
-  margin: 0px 150px;
+  margin-top: 60px;
+  padding: 40px 40px 20px 40px;
+  margin-bottom: 60px;
   border-radius: 20px;
   color: #FAFAFA;
 }
@@ -650,7 +653,7 @@ button {
 .one {
   background: rgba(217, 217, 217, 1);
   color: #272829;
-  border-radius:20px;
+  border-radius: 20px;
 }
 
 .sign-up-for-news-letter-text {
@@ -1239,9 +1242,20 @@ ul li:last-child {
 /*hover effect CSS End*/
 
 .speaker-name {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
+  font-weight: 600;
   text-transform: initial;
+}
+
+.speaker-desc {
+  font-family: Poppins;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+
 }
 
 /*Podcast  Speakers Profile  CSS section End*/
