@@ -775,6 +775,16 @@ button {
   justify-content: space-between;
 }
 
+.all-heading {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 700;
+  color: #FAFAFA;
+  line-height: 67.5px;
+  text-align: left;
+
+}
+
 .owl-carousel .owl-wrapper-outer {
   overflow: hidden;
   position: relative;
@@ -975,7 +985,8 @@ opacity: 1;
 
 
 #customNextBtn1,
-#customPreviousBtn2 {
+#customPreviousBtn2,#HindicustomNextBtn1,#HindicustomNextBtn2,
+#EnglishcustomNextBtn1,#EnglishcustomNextBtn2 {
   background-color: rgba(217, 217, 217, 1);
   border-radius: 50%;
   height: 50px;
@@ -1455,6 +1466,31 @@ ul li:last-child {
 }
 
 /*speakers profile image hover css end*/
+
+
+/*video/audio podcast page CSS start*/
+.audio-video-section-space {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.audio-video-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.audio-video-heading h1 {
+  font-family: Poppins;
+  color: #FAFAFA;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 67.5px;
+  text-align: left;
+
+}
+
+/*video/audio podcast page CSS end*/
+
 
 /*footer section start*/
 .bg-footer {
