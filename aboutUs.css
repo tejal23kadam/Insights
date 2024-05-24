@@ -820,6 +820,7 @@ button {
 .post-slide .post-img {
   position: relative;
   overflow: hidden;
+  display: flex;
   border-radius: 10px;
 
 }
@@ -834,7 +835,7 @@ button {
   height: auto;
 }
 
-.post-slide .over-layer {
+.post-slide .over-layer-listen-now {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -845,12 +846,12 @@ button {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.post-slide:hover .over-layer {
+.post-slide:hover .over-layer-listen-now {
   opacity: 1;
   text-decoration: none;
 }
 
-.post-slide .over-layer img {
+.post-slide .over-layer-listen-now img {
   position: relative;
   top: 45%;
   left: 30%;
@@ -859,6 +860,53 @@ button {
   color: #fff;
   font-size: 25px;
 }
+
+.post-slide .over-layer-add {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+.post-slide:hover .over-layer-add {
+  opacity: 1;
+  text-decoration: none;
+}
+.post-slide .over-layer-add img {
+  position: relative;
+  top: 45%;
+  left: 10%;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 25px;
+}
+.post-slide .over-layer-favourite {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+.post-slide:hover .over-layer-favourite {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.post-slide .over-layer-favourite img {
+  position: relative;
+  top: 45%;
+  left: 70%;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 25px;
+}
+
 
 .post-slide .post-content {
   background: #fff;
