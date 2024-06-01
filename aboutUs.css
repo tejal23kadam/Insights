@@ -510,7 +510,7 @@ section {
 
 .header-trending {
   font-family: Poppins;
-  font-size: 62px;
+  font-size: calc(2em + 1vw);
   color: white !important;
   font-weight: 700;
   line-height: 93px;
@@ -746,7 +746,7 @@ button {
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
-  text-align: left;
+  text-align: justify;
 }
 
 /*our mission section css end*/
@@ -870,10 +870,12 @@ button {
   opacity: 0;
   transition: all 0.3s ease-in-out 0s;
 }
+
 .post-slide:hover .over-layer-add {
   opacity: 1;
   text-decoration: none;
 }
+
 .post-slide .over-layer-add img {
   position: relative;
   top: 45%;
@@ -883,6 +885,7 @@ button {
   color: #fff;
   font-size: 25px;
 }
+
 .post-slide .over-layer-favourite {
   width: 100%;
   height: 100%;
@@ -892,6 +895,7 @@ button {
   opacity: 0;
   transition: all 0.3s ease-in-out 0s;
 }
+
 .post-slide:hover .over-layer-favourite {
   opacity: 1;
   text-decoration: none;
@@ -1033,8 +1037,11 @@ opacity: 1;
 
 
 #customNextBtn1,
-#customPreviousBtn2,#HindicustomNextBtn1,#HindicustomNextBtn2,
-#EnglishcustomNextBtn1,#EnglishcustomNextBtn2 {
+#customPreviousBtn2,
+#HindicustomNextBtn1,
+#HindicustomNextBtn2,
+#EnglishcustomNextBtn1,
+#EnglishcustomNextBtn2 {
   background-color: rgba(217, 217, 217, 1);
   border-radius: 50%;
   height: 50px;
@@ -1539,6 +1546,39 @@ ul li:last-child {
 
 /*video/audio podcast page CSS end*/
 
+/*Login section Css start*/
+.login-class div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.login-class input {
+  border-radius: 10px;
+  height: 50px;
+  background: rgba(6, 16, 32, 0.75);
+  width: 80%;
+  outline: none;
+  color: white;
+}
+
+.login-us-button {
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+.login-us-button a{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*Login section Css end*/
+
 
 /*footer section start*/
 .bg-footer {
@@ -1794,6 +1834,14 @@ ul li:last-child {
 @media (max-width: 425px) and (min-width: 0px) {
   .our-values-text-section {
     flex-direction: column;
+  }
+
+  .margin-right-class {
+    margin-right: 0px;
+  }
+
+  .margin-left-class {
+    margin-left: 0px;
   }
 
   #responsive-image-section-with-transform {
